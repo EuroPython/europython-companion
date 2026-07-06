@@ -57,6 +57,7 @@ export default function SpeakersScreen() {
         <FlatList
           data={speakers}
           keyExtractor={(item) => item.id}
+          contentInsetAdjustmentBehavior="automatic"
           contentContainerStyle={styles.listContent}
           renderItem={({ item }) => (
             <SpeakerListItem

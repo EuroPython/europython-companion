@@ -15,6 +15,7 @@ export default function PaddedScrollView({
   return (
     <ScrollView
       {...rest}
+      contentInsetAdjustmentBehavior="automatic"
       contentContainerStyle={[
         {
           padding: contentPadding,

@@ -1,4 +1,14 @@
-import * as Calendar from "expo-calendar";
+import {
+  ExpoCalendar,
+  ExpoCalendarEvent,
+  getCalendars,
+  createCalendar,
+  getDefaultCalendarSync,
+  requestCalendarPermissions,
+  EntityTypes,
+  CalendarAccessLevel,
+  SourceType,
+} from "expo-calendar";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Alert, Linking, Platform } from "react-native";
 
@@ -41,13 +51,13 @@ async function saveCache(year: number, cache: EventCache) {
 async function ensureCalendarAccess(year: number): Promise<string> {
   if (calendarIdCache[year]) {
     try {
-      const calendars = await Calendar.getCalendarsAsync(Calendar.EntityTypes.EVENT);
+      const calendars = await getCalendars(EntityTypes.EVENT);
       const cached = calendars.find((cal) => cal.id === calendarIdCache[year]);
       if (cached?.allowsModifications) return calendarIdCache[year];
     } catch {}
     delete calendarIdCache[year];
   }
-  const permission = await Calendar.requestCalendarPermissionsAsync();
+  const permission = await requestCalendarPermissions();
   if (permission.status !== "granted") {
     Alert.alert(
       "Calendar access is off",
@@ -60,13 +70,18 @@ async function ensureCalendarAccess(year: number): Promise<string> {
     throw new Error(CALENDAR_PERMISSION_ERROR);
   }
 
-  const defaultCalendar = await Calendar.getDefaultCalendarAsync().catch(() => null);
+  let defaultCalendar: ExpoCalendar | null = null;
+  if (Platform.OS === "ios") {
+    try {
+      defaultCalendar = getDefaultCalendarSync();
+    } catch {}
+  }
   if (defaultCalendar?.allowsModifications) {
     calendarIdCache[year] = defaultCalendar.id;
     return defaultCalendar.id;
   }
 
-  const calendars = await Calendar.getCalendarsAsync(Calendar.EntityTypes.EVENT);
+  const calendars = await getCalendars(EntityTypes.EVENT);
   const desiredTitle = `EuroPython ${year}`;
   const writable =
     calendars.find((c) => c.allowsModifications && c.title === desiredTitle) ??
@@ -82,24 +97,24 @@ async function ensureCalendarAccess(year: number): Promise<string> {
     Platform.OS === "ios"
       ? (iosSource ?? { type: "local", name: "EuroPython" })
       : {
-          type: Calendar.SourceType.LOCAL,
+          type: SourceType.LOCAL,
           name: "EuroPython",
           isLocalAccount: true,
         };
 
-  const newCalendarId = await Calendar.createCalendarAsync({
+  const newCalendar = await createCalendar({
     title: desiredTitle,
     color: "#2563eb",
-    entityType: Calendar.EntityTypes.EVENT,
+    entityType: EntityTypes.EVENT,
     source,
     sourceId: (source as any)?.id,
     name: "EuroPython",
-    accessLevel: Calendar.CalendarAccessLevel.OWNER,
+    accessLevel: CalendarAccessLevel.OWNER,
     ownerAccount: Platform.OS === "android" ? "local" : undefined,
   });
 
-  calendarIdCache[year] = newCalendarId;
-  return newCalendarId;
+  calendarIdCache[year] = newCalendar.id;
+  return newCalendar.id;
 }
 
 /**
@@ -118,7 +133,7 @@ export async function addSessionToCalendar(
     const existingEventId = cache[session.id];
     if (existingEventId) {
       try {
-        const existing = await Calendar.getEventAsync(existingEventId);
+        const existing = await ExpoCalendarEvent.get(existingEventId);
         if (existing) {
           return {
             added: false,
@@ -137,17 +152,17 @@ export async function addSessionToCalendar(
     const location = getRoomLabel(session);
     const notes = [session.tweet, session.websiteUrl].filter(Boolean).join("\n");
 
-    const newEventId = await Calendar.createEventAsync(calendarId, {
+    const calendar = await ExpoCalendar.get(calendarId);
+    const newEvent = await calendar.createEvent({
       title: session.title,
       startDate,
       endDate,
       location,
       notes: notes || undefined,
-      timeZone: undefined,
       alarms: [{ relativeOffset: -Math.max(1, leadMinutes) }],
     });
 
-    cache[session.id] = newEventId;
+    cache[session.id] = newEvent.id;
     await saveCache(year, cache);
 
     return { added: true, message: "Session added to your calendar." };
@@ -166,7 +181,7 @@ export async function isSessionInCalendar(sessionId: string, year: number) {
   const existingEventId = cache[sessionId];
   if (!existingEventId) return false;
   try {
-    const existing = await Calendar.getEventAsync(existingEventId);
+    const existing = await ExpoCalendarEvent.get(existingEventId);
     return !!existing;
   } catch {
     return false;
@@ -186,7 +201,8 @@ export async function removeSessionFromCalendar(
     return { removed: false, message: "No calendar event found for this session." };
   }
   try {
-    await Calendar.deleteEventAsync(existingEventId);
+    const event = await ExpoCalendarEvent.get(existingEventId);
+    await event.delete();
     delete cache[sessionId];
     await saveCache(year, cache);
     return { removed: true, message: "Removed from your calendar." };

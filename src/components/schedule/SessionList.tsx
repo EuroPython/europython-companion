@@ -62,6 +62,7 @@ export default function SessionList({
     <SectionList
       sections={sections}
       keyExtractor={(item) => (isBreak(item) ? item.id : (item.slotId ?? item.id))}
+      contentInsetAdjustmentBehavior="automatic"
       contentContainerStyle={styles.listContent}
       stickySectionHeadersEnabled={false}
       renderSectionHeader={({ section }) => (
