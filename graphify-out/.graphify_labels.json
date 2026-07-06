@@ -27,5 +27,10 @@
   "25": "Babel Config",
   "26": "Expo Entry Point",
   "27": "Default Prod Base URL Constant",
-  "28": "Legacy Color Export"
+  "28": "Legacy Color Export",
+  "29": "conference.ts",
+  "30": "homeInfo.ts",
+  "31": "onboarding.ts",
+  "32": "share.ts",
+  "33": "coc.ts"
 }

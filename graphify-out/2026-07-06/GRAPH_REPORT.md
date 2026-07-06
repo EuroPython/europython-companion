@@ -1,13 +1,18 @@
-# Graph Report - .  (2026-07-06)
+# Graph Report - europython-companion  (2026-07-06)
 
 ## Corpus Check
-- 8 files · ~29,375 words
+- 92 files · ~29,356 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 548 nodes · 1193 edges · 29 communities (25 shown, 4 thin omitted)
+- 547 nodes · 1183 edges · 29 communities (26 shown, 3 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 9 edges (avg confidence: 0.75)
 - Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `992fe090`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Schedule List Components|Schedule List Components]]
@@ -43,9 +48,9 @@
 2. `useAppNavigation()` - 23 edges
 3. `useConferenceData()` - 21 edges
 4. `Architecture (docs)` - 20 edges
-5. `useSettings()` - 19 edges
-6. `useFavorites()` - 15 edges
-7. `radius` - 15 edges
+5. `useSettings()` - 17 edges
+6. `radius` - 15 edges
+7. `useFavorites()` - 15 edges
 8. `Data and State (docs)` - 14 edges
 9. `expo` - 13 edges
 10. `useEffectiveTimeZone()` - 13 edges
@@ -70,7 +75,7 @@
 - **Cross-cutting hooks centralizing side effects and derived values** — architecture_usescheduleNotifications, architecture_usecalendarsync, architecture_useappnavigation, architecture_useeffectivetimezone, architecture_useapptheme [EXTRACTED 1.00]
 - **Documentation suite organized by docs/README.md** — docs_readme_index, docs_architecture_doc, docs_project_structure_doc, docs_development_workflow_doc, docs_navigation_doc, docs_configuration_doc, docs_data_and_state_doc, docs_testing_doc, docs_future_work_doc [EXTRACTED 1.00]
 
-## Communities (29 total, 4 thin omitted)
+## Communities (29 total, 3 thin omitted)
 
 ### Community 0 - "Schedule List Components"
 Cohesion: 0.08
@@ -81,8 +86,8 @@ Cohesion: 0.06
 Nodes (64): app.json (Expo config), App.tsx (root component), ConferenceDataProvider (src/store/conferenceData.tsx), src/config/conference.ts, src/config/constants.ts, src/data/sessionTypes.ts, dev-proxy.mjs, FavoritesProvider (src/store/favorites.tsx) (+56 more)
 
 ### Community 2 - "Screen Layout & Conference Config"
-Cohesion: 0.09
-Nodes (40): Props, ScreenContainer(), styles, FavoriteToggleButton(), IconButtonProps, Props, CONFERENCE_META, CONFERENCE_YEARS (+32 more)
+Cohesion: 0.07
+Nodes (45): Props, ScreenContainer(), styles, FavoriteToggleButton(), IconButtonProps, Props, CONFERENCE_META, CONFERENCE_YEARS (+37 more)
 
 ### Community 3 - "NPM Dependencies"
 Cohesion: 0.04
@@ -105,8 +110,8 @@ Cohesion: 0.07
 Nodes (29): backgroundColor, foregroundImage, adaptiveIcon, edgeToEdgeEnabled, package, permissions, predictiveBackGestureEnabled, expo (+21 more)
 
 ### Community 8 - "App Root & Nav Theme"
-Cohesion: 0.13
-Nodes (14): AppContent(), builtStacks, stackScreenOptions, Tab, useAppNavTheme(), extractSessionId(), navigateToSession(), useNotificationDeepLink() (+6 more)
+Cohesion: 0.22
+Nodes (3): builtStacks, stackScreenOptions, Tab
 
 ### Community 9 - "TypeScript Path Aliases"
 Cohesion: 0.10
@@ -164,25 +169,29 @@ Nodes (4): CardProps, Props, SettingsSection(), styles
 Cohesion: 0.40
 Nodes (3): Props, SocialLink, styles
 
+### Community 28 - "Legacy Color Export"
+Cohesion: 0.83
+Nodes (3): extractSessionId(), navigateToSession(), useNotificationDeepLink()
+
 ## Knowledge Gaps
-- **210 isolated node(s):** `name`, `slug`, `version`, `orientation`, `icon` (+205 more)
+- **209 isolated node(s):** `stackScreenOptions`, `builtStacks`, `Tab`, `Palette`, `nightPalette` (+204 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `spacing` connect `Home Hero & Need-to-Know Cards` to `Schedule List Components`, `Screen Layout & Conference Config`, `Session/Break List Items & Legend`, `Navigation Routes & CoC Data`, `CoC Contacts Screen`, `Search Bar & Offline Banner`, `Theme & Color Palettes`, `Settings Row Components`, `Detail Action Row`, `Info Card`, `Chip Picker Input`, `Settings Section`, `Social Links Row`?**
-  _High betweenness centrality (0.041) - this node is a cross-community bridge._
-- **Why does `useSettings()` connect `Screen Layout & Conference Config` to `App Root & Nav Theme`, `Schedule List Components`, `Home Hero & Need-to-Know Cards`?**
-  _High betweenness centrality (0.024) - this node is a cross-community bridge._
+  _High betweenness centrality (0.040) - this node is a cross-community bridge._
 - **Why does `Session` connect `Schedule List Components` to `Screen Layout & Conference Config`, `Calendar Sync`, `Conference Data Fetch/Cache Service`, `Session/Break List Items & Legend`?**
-  _High betweenness centrality (0.017) - this node is a cross-community bridge._
-- **What connects `name`, `slug`, `version` to the rest of the system?**
-  _218 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.016) - this node is a cross-community bridge._
+- **Why does `useAppNavigation()` connect `Schedule List Components` to `Screen Layout & Conference Config`, `Home Hero & Need-to-Know Cards`, `Navigation Routes & CoC Data`?**
+  _High betweenness centrality (0.009) - this node is a cross-community bridge._
+- **What connects `stackScreenOptions`, `builtStacks`, `Tab` to the rest of the system?**
+  _217 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Schedule List Components` be split into smaller, more focused modules?**
   _Cohesion score 0.08257229832572298 - nodes in this community are weakly interconnected._
 - **Should `App Bootstrap & Data Providers` be split into smaller, more focused modules?**
   _Cohesion score 0.05505952380952381 - nodes in this community are weakly interconnected._
 - **Should `Screen Layout & Conference Config` be split into smaller, more focused modules?**
-  _Cohesion score 0.08597285067873303 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07103825136612021 - nodes in this community are weakly interconnected._
