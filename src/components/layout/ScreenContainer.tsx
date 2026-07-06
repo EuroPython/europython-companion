@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import { StyleSheet, View, ViewStyle, StyleProp, Pressable } from "react-native";
 import { useTheme, Text, IconButton, Icon } from "react-native-paper";
 import { useSafeAreaInsets } from "react-native-safe-area-context";

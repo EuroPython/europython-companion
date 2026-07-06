@@ -1,4 +1,3 @@
-import React from "react";
 import { ScrollView, StyleSheet, View } from "react-native";
 import { Chip, Text, useTheme } from "react-native-paper";
 import { spacing } from "@theme";

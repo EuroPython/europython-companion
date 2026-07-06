@@ -1,5 +1,3 @@
-import React from "react";
-
 import OfflineBanner from "./OfflineBanner";
 import { useConferenceData } from "@store/conferenceData";
 import { formatFetchedAt } from "@utils/time";

@@ -1,4 +1,3 @@
-import React from "react";
 import { Linking, StyleSheet, View } from "react-native";
 import { IconButton, useTheme } from "react-native-paper";
 import { spacing } from "@theme";

@@ -30,7 +30,7 @@ app.use(
   "/programme",
   createProxyMiddleware({
     changeOrigin: true,
-    logLevel: "info",
+    logger: console,
     router: (req) => {
       // extract year from the path: /programme/ep{year}/...
       const match = req.url.match(/^\/ep(\d{4})\b/);

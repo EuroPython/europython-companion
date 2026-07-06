@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { FlatList, StyleSheet } from "react-native";
 
 import ScreenContainer from "@components/layout/ScreenContainer";

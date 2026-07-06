@@ -4,20 +4,19 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "@components/*": ["src/components/*"],
-      "@hooks/*": ["src/hooks/*"],
-      "@utils/*": ["src/utils/*"],
-      "@store/*": ["src/store/*"],
-      "@screens/*": ["src/screens/*"],
-      "@navigation/*": ["src/navigation/*"],
-      "@config/*": ["src/config/*"],
-      "@app-types/*": ["src/types/*"],
-      "@services/*": ["src/services/*"],
-      "@theme": ["src/theme"],
-      "@data/*": ["src/data/*"]
+      "@/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@store/*": ["./src/store/*"],
+      "@screens/*": ["./src/screens/*"],
+      "@navigation/*": ["./src/navigation/*"],
+      "@config/*": ["./src/config/*"],
+      "@app-types/*": ["./src/types/*"],
+      "@services/*": ["./src/services/*"],
+      "@theme": ["./src/theme"],
+      "@data/*": ["./src/data/*"]
     }
   }
 }

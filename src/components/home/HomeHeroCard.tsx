@@ -1,4 +1,3 @@
-import React from "react";
 import { View, StyleSheet } from "react-native";
 import { Button, Card, Text, useTheme } from "react-native-paper";
 

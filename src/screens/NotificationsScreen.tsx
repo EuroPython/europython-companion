@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { StyleSheet } from "react-native";
 import { Card, Text, useTheme } from "react-native-paper";
 import { useFocusEffect } from "@react-navigation/native";

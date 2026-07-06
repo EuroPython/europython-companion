@@ -1,4 +1,3 @@
-import React from "react";
 import { ScrollView, ScrollViewProps } from "react-native";
 
 import { spacing } from "@theme";

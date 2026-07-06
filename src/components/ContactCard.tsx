@@ -1,4 +1,3 @@
-import React from "react";
 import { Linking, StyleSheet } from "react-native";
 import { Card, Text, useTheme } from "react-native-paper";
 import { radius, spacing } from "@theme";

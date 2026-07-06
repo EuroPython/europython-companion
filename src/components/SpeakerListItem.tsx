@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, Avatar } from "react-native-paper";
 
 type Props = {

@@ -1,4 +1,3 @@
-import React from "react";
 import { StyleSheet, View } from "react-native";
 import { Dialog, Portal, Text, Button, useTheme } from "react-native-paper";
 

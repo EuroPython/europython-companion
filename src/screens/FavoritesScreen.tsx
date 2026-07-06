@@ -1,4 +1,4 @@
-import React, { useMemo, useCallback, useState } from "react";
+import { useMemo, useCallback, useState } from "react";
 import { StyleSheet, View } from "react-native";
 import { Button } from "react-native-paper";
 

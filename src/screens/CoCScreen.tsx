@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { StyleSheet, View, Linking } from "react-native";
 import { Button } from "react-native-paper";
 import { WebView } from "react-native-webview";

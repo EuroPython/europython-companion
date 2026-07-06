@@ -6,12 +6,6 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "eu.europython.companion",
@@ -25,7 +19,6 @@
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
       "permissions": ["READ_CALENDAR", "WRITE_CALENDAR"],
       "package": "eu.europython.companion"
@@ -33,6 +26,20 @@
     "web": {
       "favicon": "./assets/icon.png"
     },
-    "plugins": ["expo-notifications", "expo-font", "expo-calendar", "expo-system-ui"]
+    "plugins": [
+      "expo-notifications",
+      "expo-font",
+      "expo-calendar",
+      "expo-system-ui",
+      "expo-status-bar",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ]
   }
 }
