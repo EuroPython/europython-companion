@@ -40,6 +40,7 @@ export default function ScreenContainer({
   const stackDepth = isStack ? (navState.index ?? 0) : 0;
   const isTabRoot = parentState?.type === "tab" && stackDepth === 0;
   const showBack = !isTabRoot && (stackDepth > 0 || (navigation?.canGoBack?.() ?? false));
+  const showEndSlot = !!infoButton || !!headerRight;
 
   return (
     <View
@@ -88,44 +89,55 @@ export default function ScreenContainer({
         </Pressable>
       )}
       {title && (
-        <View style={[styles.headerRow]}>
-          {showBack ? (
-            <IconButton
-              icon="arrow-left"
-              size={22}
-              onPress={() => navigation.goBack()}
-              accessibilityLabel="Go back"
-              style={[styles.backButton, { backgroundColor: colors.background }]}
-            />
-          ) : null}
-          <View style={styles.headerTextBlock}>
-            <Text variant="titleLarge" style={[styles.headerTitle]}>
+        <View style={styles.headerRow}>
+          <View
+            style={[
+              styles.headerTextBlock,
+              showBack && { paddingLeft: 44 },
+              showEndSlot && { paddingRight: 44 },
+            ]}
+          >
+            <Text variant="titleLarge" style={styles.headerTitle}>
               {title}
             </Text>
             {subtitle ? (
-              <Text variant="bodyMedium" style={[styles.headerSubtitle]}>
+              <Text variant="bodyMedium" style={styles.headerSubtitle}>
                 {subtitle}
               </Text>
             ) : null}
           </View>
-          {infoButton ? (
-            <IconButton
-              icon={infoButton.icon ?? "information-outline"}
-              size={22}
-              onPress={infoButton.onPress}
-              accessibilityLabel={
-                infoButton.accessibilityLabel ?? "Show more information"
-              }
-              style={[styles.infoButton, { backgroundColor: colors.background }]}
-            />
+
+          {showBack ? (
+            <View style={[styles.headerSideSlot, styles.headerBackSlot]}>
+              <IconButton
+                icon="arrow-left"
+                size={22}
+                onPress={() => navigation.goBack()}
+                accessibilityLabel="Go back"
+                style={{ backgroundColor: colors.background }}
+              />
+            </View>
           ) : null}
-          {!infoButton && headerRight ? (
-            <View style={styles.headerRight}>{headerRight}</View>
+
+          {infoButton ? (
+            <View style={[styles.headerSideSlot, styles.headerEndSlot]}>
+              <IconButton
+                icon={infoButton.icon ?? "information-outline"}
+                size={22}
+                onPress={infoButton.onPress}
+                accessibilityLabel={
+                  infoButton.accessibilityLabel ?? "Show more information"
+                }
+                style={{ backgroundColor: colors.background }}
+              />
+            </View>
+          ) : !infoButton && headerRight ? (
+            <View style={[styles.headerSideSlot, styles.headerEndSlot]}>{headerRight}</View>
           ) : null}
         </View>
       )}
 
-      <View style={[styles.content]}>{children}</View>
+      <View style={styles.content}>{children}</View>
     </View>
   );
 }
@@ -135,22 +147,12 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   headerRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "flex-start",
+    position: "relative",
     paddingHorizontal: spacing.md,
     paddingTop: spacing.sm,
     paddingBottom: spacing.xs,
   },
-  backButton: {
-    marginLeft: -spacing.xs,
-    marginRight: spacing.sm,
-  },
-  headerTextBlock: {
-    flexShrink: 1,
-    flex: 1,
-    paddingRight: spacing.sm,
-  },
+  headerTextBlock: {},
   headerTitle: {
     fontWeight: "bold",
   },
@@ -158,11 +160,18 @@ const styles = StyleSheet.create({
     marginTop: 2,
     opacity: 0.85,
   },
-  headerRight: {
-    marginLeft: "auto",
+  headerSideSlot: {
+    position: "absolute",
+    top: 0,
+    bottom: 0,
+    justifyContent: "center",
+    alignItems: "center",
   },
-  infoButton: {
-    marginLeft: spacing.xs,
+  headerBackSlot: {
+    left: spacing.xs,
+  },
+  headerEndSlot: {
+    right: spacing.xs,
   },
   content: {
     flex: 1,
