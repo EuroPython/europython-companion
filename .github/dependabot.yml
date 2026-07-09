@@ -4,3 +4,8 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+
+    allow:
+      - dependency-name: "baseline-browser-mapping"
+      - dependency-name: "prettier"
+      - dependency-name: "workbox-cli"
