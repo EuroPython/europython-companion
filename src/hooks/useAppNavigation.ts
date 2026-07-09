@@ -1,3 +1,4 @@
+import { useCallback } from "react";
 import { NavigationProp, ParamListBase, useNavigation } from "@react-navigation/native";
 import navigationRef from "@navigation/navigationRef";
 import {
@@ -23,39 +24,39 @@ export function useAppNavigation() {
     return Array.isArray(names) && names.includes(name);
   };
 
-  const goToScheduleTab = () => {
+  const goToScheduleTab = useCallback(() => {
     if (parentNav) {
       parentNav.navigate(TabRoutes.Schedule);
     } else {
       navigationRef.current?.navigate(TabRoutes.Schedule);
     }
-  };
+  }, [parentNav]);
 
-  const goToSpeakersTab = () => {
+  const goToSpeakersTab = useCallback(() => {
     if (parentNav) {
       parentNav.navigate(TabRoutes.Speakers);
     } else {
       navigationRef.current?.navigate(TabRoutes.Speakers);
     }
-  };
+  }, [parentNav]);
 
-  const goToHomeTab = () => {
+  const goToHomeTab = useCallback(() => {
     if (parentNav) {
       parentNav.navigate(TabRoutes.Home);
     } else {
       navigationRef.current?.navigate(TabRoutes.Home);
     }
-  };
+  }, [parentNav]);
 
-  const goToSettingsTab = () => {
+  const goToSettingsTab = useCallback(() => {
     if (parentNav) {
       parentNav.navigate(TabRoutes.Settings);
     } else {
       navigationRef.current?.navigate(TabRoutes.Settings);
     }
-  };
+  }, [parentNav]);
 
-  const goToAgendaTab = () => {
+  const goToAgendaTab = useCallback(() => {
     if (hasRoute(navigation, AgendaStackRoutes.Agenda)) {
       navigation.navigate(AgendaStackRoutes.Agenda);
       return;
@@ -69,45 +70,51 @@ export function useAppNavigation() {
     navigationRef.current?.navigate(TabRoutes.Agenda, {
       screen: AgendaStackRoutes.Agenda,
     });
-  };
+  }, [navigation, parentNav]);
 
-  const openSession = (sessionId: string) => {
-    if (hasRoute(navigation, SharedRoutes.SessionDetail)) {
-      navigation.navigate(SharedRoutes.SessionDetail, { sessionId });
-      return;
-    }
-    if (parentNav) {
-      parentNav.navigate(TabRoutes.Schedule, {
+  const openSession = useCallback(
+    (sessionId: string) => {
+      if (hasRoute(navigation, SharedRoutes.SessionDetail)) {
+        navigation.navigate(SharedRoutes.SessionDetail, { sessionId });
+        return;
+      }
+      if (parentNav) {
+        parentNav.navigate(TabRoutes.Schedule, {
+          screen: SharedRoutes.SessionDetail,
+          params: { sessionId },
+        });
+        return;
+      }
+      navigationRef.current?.navigate(TabRoutes.Schedule, {
         screen: SharedRoutes.SessionDetail,
         params: { sessionId },
       });
-      return;
-    }
-    navigationRef.current?.navigate(TabRoutes.Schedule, {
-      screen: SharedRoutes.SessionDetail,
-      params: { sessionId },
-    });
-  };
+    },
+    [navigation, parentNav],
+  );
 
-  const openSpeaker = (speakerId: string) => {
-    if (hasRoute(navigation, SharedRoutes.SpeakerDetail)) {
-      navigation.navigate(SharedRoutes.SpeakerDetail, { speakerId });
-      return;
-    }
-    if (parentNav) {
-      parentNav.navigate(TabRoutes.Speakers, {
+  const openSpeaker = useCallback(
+    (speakerId: string) => {
+      if (hasRoute(navigation, SharedRoutes.SpeakerDetail)) {
+        navigation.navigate(SharedRoutes.SpeakerDetail, { speakerId });
+        return;
+      }
+      if (parentNav) {
+        parentNav.navigate(TabRoutes.Speakers, {
+          screen: SharedRoutes.SpeakerDetail,
+          params: { speakerId },
+        });
+        return;
+      }
+      navigationRef.current?.navigate(TabRoutes.Speakers, {
         screen: SharedRoutes.SpeakerDetail,
         params: { speakerId },
       });
-      return;
-    }
-    navigationRef.current?.navigate(TabRoutes.Speakers, {
-      screen: SharedRoutes.SpeakerDetail,
-      params: { speakerId },
-    });
-  };
+    },
+    [navigation, parentNav],
+  );
 
-  const openNotificationsList = () => {
+  const openNotificationsList = useCallback(() => {
     if (hasRoute(navigation, SettingsStackRoutes.NotificationsList)) {
       navigation.navigate(SettingsStackRoutes.NotificationsList);
       return;
@@ -121,9 +128,9 @@ export function useAppNavigation() {
     navigationRef.current?.navigate(TabRoutes.Settings, {
       screen: SettingsStackRoutes.NotificationsList,
     });
-  };
+  }, [navigation, parentNav]);
 
-  const openCoC = () => {
+  const openCoC = useCallback(() => {
     try {
       navigation.navigate(HomeStackRoutes.CoC);
       return;
@@ -135,9 +142,9 @@ export function useAppNavigation() {
       return;
     }
     navigationRef.current?.navigate(TabRoutes.Home, { screen: HomeStackRoutes.CoC });
-  };
+  }, [navigation, parentNav]);
 
-  const openCoCContacts = () => {
+  const openCoCContacts = useCallback(() => {
     try {
       navigation.navigate(HomeStackRoutes.CoCContacts);
       return;
@@ -151,7 +158,7 @@ export function useAppNavigation() {
     navigationRef.current?.navigate(TabRoutes.Home, {
       screen: HomeStackRoutes.CoCContacts,
     });
-  };
+  }, [navigation, parentNav]);
 
   return {
     navigation,

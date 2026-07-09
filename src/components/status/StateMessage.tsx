@@ -15,11 +15,17 @@ export default function StateMessage({ title, subtitle, loading, style }: Props)
   return (
     <View style={[styles.center, style]}>
       {loading ? <ActivityIndicator /> : null}
-      <Text style={{ marginTop: loading ? spacing.xs : 0 }}>{title}</Text>
+      <Text style={{ marginTop: loading ? spacing.xs : 0, textAlign: "center" }}>
+        {title}
+      </Text>
       {subtitle ? (
         <Text
           variant="bodySmall"
-          style={{ color: colors.onSurfaceVariant, marginTop: spacing.xs }}
+          style={{
+            color: colors.onSurfaceVariant,
+            marginTop: spacing.xs,
+            textAlign: "center",
+          }}
         >
           {subtitle}
         </Text>

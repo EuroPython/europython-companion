@@ -6,12 +6,9 @@ import { ScheduleItem, Session } from "@app-types/conference";
 import { spacing } from "@theme";
 import SessionListItem from "./SessionListItem";
 import { useFavorites } from "@store/favorites";
+import { useSettings } from "@store/settings";
 import { hapticLightImpact, hapticSelection } from "@utils/haptics";
-import {
-  compareSessionsByStart,
-  groupBySessionStartLabel,
-  isBreak,
-} from "@utils/schedule";
+import { groupBySessionStartLabel, isBreak, sortScheduleItems } from "@utils/schedule";
 import useSpeakerAvatars from "@hooks/useSpeakerAvatars";
 import BreakListItem from "./BreakListItem";
 import StateMessage from "../status/StateMessage";
@@ -37,13 +34,14 @@ export default function SessionList({
 }: Props) {
   const { colors } = useTheme();
   const { isFavorite, toggleFavorite } = useFavorites();
+  const { conferenceYear } = useSettings();
   const wasRefreshing = useRef(refreshing);
   const speakerAvatars = useSpeakerAvatars();
 
   const sections = useMemo(() => {
-    const sorted = [...sessions].sort(compareSessionsByStart);
+    const sorted = sortScheduleItems(sessions, conferenceYear);
     return groupBySessionStartLabel(sorted, timeZone);
-  }, [sessions, timeZone]);
+  }, [sessions, timeZone, conferenceYear]);
 
   useEffect(() => {
     if (!wasRefreshing.current && refreshing) {
@@ -78,7 +76,7 @@ export default function SessionList({
         ) : (
           <SessionListItem
             session={item as Session}
-            onPress={() => onSelect(item.id)}
+            onPress={onSelect}
             isFavorite={isFavorite(item.id)}
             timeZone={timeZone}
             speakerAvatars={speakerAvatars}

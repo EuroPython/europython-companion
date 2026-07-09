@@ -15,7 +15,6 @@ import { useFavorites } from "@store/favorites";
 import { useSettings } from "@store/settings";
 import { useAppNavigation } from "@hooks/useAppNavigation";
 import { useCalendarSync } from "@hooks/useCalendarSync";
-import { compareSessionsByStart } from "@utils/schedule";
 import useEffectiveTimeZone from "@hooks/useEffectiveTimeZone";
 
 export default function FavoritesScreen() {
@@ -30,8 +29,7 @@ export default function FavoritesScreen() {
   const sessionsForList: Session[] = useMemo(() => {
     if (!data) return [];
     const all = Object.values(data.sessionsById);
-    const fav = all.filter((s) => favorites.has(s.id));
-    return fav.sort(compareSessionsByStart);
+    return all.filter((s) => favorites.has(s.id));
   }, [data, favorites]);
 
   const handleAddAllToCalendar = useCallback(() => {

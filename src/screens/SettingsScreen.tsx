@@ -243,17 +243,16 @@ export default function SettingsScreen() {
                 disabled={Platform.OS === "web"}
                 onValueChange={async (val) => {
                   if (!val) {
-                    await setNotificationsEnabled(false);
+                    setNotificationsEnabled(false);
                     hapticLightImpact();
                     return;
                   }
+                  setNotificationsEnabled(true); // optimistic; revert below on denial
                   const { granted } = await requestNotificationPermissionWithFeedback({});
                   if (!granted) {
-                    await setNotificationsEnabled(false);
+                    setNotificationsEnabled(false);
                     hapticWarning();
-                    return;
                   }
-                  await setNotificationsEnabled(true);
                 }}
               />
               <View style={{ marginTop: spacing.xs }}>
@@ -278,17 +277,16 @@ export default function SettingsScreen() {
                 disabled={Platform.OS === "web"}
                 onValueChange={async (val) => {
                   if (!val) {
-                    await setBreakNotificationsEnabled(false);
+                    setBreakNotificationsEnabled(false);
                     hapticLightImpact();
                     return;
                   }
+                  setBreakNotificationsEnabled(true); // optimistic; revert below on denial
                   const { granted } = await requestNotificationPermissionWithFeedback({});
                   if (!granted) {
-                    await setBreakNotificationsEnabled(false);
+                    setBreakNotificationsEnabled(false);
                     hapticWarning();
-                    return;
                   }
-                  await setBreakNotificationsEnabled(true);
                 }}
               />
             </Card.Content>

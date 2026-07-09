@@ -4,7 +4,7 @@ import { Session } from "@app-types/conference";
  * Return a user-friendly room label with a fallback.
  */
 export const getRoomLabel = (session: Session) =>
-  session.room ?? session.rooms[0] ?? "Room TBA";
+  session.rooms.length > 1 ? "Plenary" : (session.room ?? session.rooms[0] ?? "Room TBA");
 
 type TimeRangeInput = Pick<Session, "start" | "end">;
 

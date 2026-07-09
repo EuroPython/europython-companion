@@ -1,7 +1,18 @@
 export const CONFERENCE_YEARS = [2026, 2025, 2024, 2023, 2022];
 export const DEFAULT_CONFERENCE_YEAR = Math.max(...CONFERENCE_YEARS);
 
-export type ConferenceMeta = { title: string; subtitle: string; timeZone: string };
+export type ConferenceMeta = {
+  title: string;
+  subtitle: string;
+  timeZone: string;
+  /**
+   * Best-effort room display order for that year's schedule. Matched by exact
+   * name (case-insensitive) against incoming room names; unmatched rooms fall
+   * back to the default (alphabetical) order after the preferred ones. Safe
+   * to leave empty or to list names that no longer match.
+   */
+  preferredRoomOrder?: string[];
+};
 
 export const CONFERENCE_META: Record<number, ConferenceMeta> = {
   2026: {
@@ -32,6 +43,9 @@ export const CONFERENCE_META: Record<number, ConferenceMeta> = {
 };
 
 export const getConferenceMeta = (year: number) => CONFERENCE_META[year]!;
+
+export const getPreferredRoomOrder = (year: number) =>
+  CONFERENCE_META[year]?.preferredRoomOrder ?? [];
 
 export const API_BASE = "https://static.europython.eu/programme";
 export const SCHEMA_VERSION = 3;

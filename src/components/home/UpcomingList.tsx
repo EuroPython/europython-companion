@@ -9,7 +9,7 @@ import { ConferenceData, ScheduleItem } from "@app-types/conference";
 import { UPCOMING_REFRESH_INTERVAL_MS } from "@config/constants";
 import { useFavorites } from "@store/favorites";
 import { useAppNavigation } from "@hooks/useAppNavigation";
-import { compareSessionsByStart, isBreak } from "@utils/schedule";
+import { isBreak, sortScheduleItems } from "@utils/schedule";
 import { isUpcomingSession } from "@utils/time";
 import useEffectiveTimeZone from "@hooks/useEffectiveTimeZone";
 import useSpeakerAvatars from "@hooks/useSpeakerAvatars";
@@ -23,7 +23,7 @@ type Props = {
 export default function UpcomingList({ data, limit = 4, favoritesOnly = false }: Props) {
   const { openSession, goToAgendaTab } = useAppNavigation();
   const { favorites, toggleFavorite } = useFavorites();
-  const { timeZone } = useEffectiveTimeZone();
+  const { timeZone, conferenceYear } = useEffectiveTimeZone();
   const { colors } = useTheme();
   const [now, setNow] = useState(() => Date.now());
   const speakerAvatars = useSpeakerAvatars();
@@ -42,8 +42,8 @@ export default function UpcomingList({ data, limit = 4, favoritesOnly = false }:
       if (isBreak(item)) return true;
       return favorites.has(item.id);
     });
-    return filtered.sort(compareSessionsByStart).slice(0, limit);
-  }, [data, favoritesOnly, favorites, limit, now]);
+    return sortScheduleItems(filtered, conferenceYear).slice(0, limit);
+  }, [data, favoritesOnly, favorites, limit, now, conferenceYear]);
 
   const header = (
     <View
@@ -98,7 +98,7 @@ export default function UpcomingList({ data, limit = 4, favoritesOnly = false }:
                 key={item.slotId ?? item.id}
                 session={item}
                 isFavorite={favorites.has(item.id)}
-                onPress={() => openSession(item.id)}
+                onPress={openSession}
                 timeZone={timeZone}
                 onToggleFavorite={toggleFavorite}
                 speakerAvatars={speakerAvatars}

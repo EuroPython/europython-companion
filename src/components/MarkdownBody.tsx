@@ -119,6 +119,7 @@ const createStyles = (theme: MD3Theme) =>
       fontStyle: "italic",
     },
     blockquote: {
+      backgroundColor: theme.colors.surfaceVariant,
       borderLeftWidth: 3,
       borderLeftColor: theme.colors.primary,
       paddingLeft: 8,

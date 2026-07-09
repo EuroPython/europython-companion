@@ -13,7 +13,7 @@ import OfflineNotice from "@components/status/OfflineNotice";
 import DataBoundary from "@components/status/DataBoundary";
 import { useConferenceData } from "@store/conferenceData";
 import { useAppNavigation } from "@hooks/useAppNavigation";
-import { compareSessionsByStart, isBreak } from "@utils/schedule";
+import { isBreak } from "@utils/schedule";
 import { formatConferenceDayLabel, formatDateISO } from "@utils/time";
 import useEffectiveTimeZone from "@hooks/useEffectiveTimeZone";
 import SessionTypeLegendDialog from "@components/schedule/SessionTypeLegendDialog";
@@ -161,9 +161,7 @@ export default function ScheduleScreen() {
       });
     }
 
-    const sortedItems = [...baseItems];
-    sortedItems.sort(compareSessionsByStart);
-    return sortedItems;
+    return baseItems;
   }, [data, effectiveDay, selectedTrack, selectedLevel, searchQuery]);
 
   const anyFilterActive = selectedTrack !== "all" || selectedLevel !== "all";

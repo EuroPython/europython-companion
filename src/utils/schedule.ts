@@ -1,5 +1,6 @@
 import { BreakSlot, ScheduleItem, Session } from "@app-types/conference";
 import { MAX_DATE_ISO } from "@config/constants";
+import { getPreferredRoomOrder } from "@config/conference";
 import { formatSessionStartLabel } from "./time";
 
 /**
@@ -24,13 +25,49 @@ export type SortableScheduleItem = Pick<ScheduleItem, "start" | "title"> & {
   eventType?: "break" | "session";
 };
 
-export function compareSessionsByStart(a: SortableScheduleItem, b: SortableScheduleItem) {
+/**
+ * Rank a room by its position in a preferred order list (exact, case-insensitive
+ * match). Unmatched rooms all share the lowest rank, so they fall back to
+ * alphabetical ordering.
+ */
+function roomPreferenceRank(room: string, preferredRoomOrder: string[]) {
+  const index = preferredRoomOrder.findIndex(
+    (preferred) => preferred.toLowerCase() === room,
+  );
+  return index === -1 ? preferredRoomOrder.length : index;
+}
+
+export function compareSessionsByStart(
+  a: SortableScheduleItem,
+  b: SortableScheduleItem,
+  preferredRoomOrder: string[] = [],
+) {
   const startDiff = new Date(a.start).getTime() - new Date(b.start).getTime();
   if (startDiff !== 0) return startDiff;
-  const aRoom = a.eventType === "break" ? "" : (a.room ?? "").toLowerCase();
-  const bRoom = b.eventType === "break" ? "" : (b.room ?? "").toLowerCase();
-  if (aRoom !== bRoom) return aRoom.localeCompare(bRoom);
+  const aIsBreak = a.eventType === "break";
+  const bIsBreak = b.eventType === "break";
+  if (aIsBreak !== bIsBreak) return aIsBreak ? -1 : 1;
+  const aRoom = aIsBreak ? "" : (a.room ?? "").toLowerCase();
+  const bRoom = bIsBreak ? "" : (b.room ?? "").toLowerCase();
+  if (aRoom !== bRoom) {
+    const rankDiff =
+      roomPreferenceRank(aRoom, preferredRoomOrder) -
+      roomPreferenceRank(bRoom, preferredRoomOrder);
+    return rankDiff !== 0 ? rankDiff : aRoom.localeCompare(bRoom);
+  }
   return (a.title ?? "").localeCompare(b.title ?? "");
+}
+
+/**
+ * Sort schedule items by start time, applying the conference year's preferred
+ * room order as the tiebreaker.
+ */
+export function sortScheduleItems<T extends SortableScheduleItem>(
+  items: T[],
+  conferenceYear: number,
+): T[] {
+  const preferredRoomOrder = getPreferredRoomOrder(conferenceYear);
+  return [...items].sort((a, b) => compareSessionsByStart(a, b, preferredRoomOrder));
 }
 
 /**

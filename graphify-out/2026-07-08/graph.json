@@ -10,47 +10,47 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "app_tsx_app",
-      "community": 3,
+      "community": 16,
       "norm_label": "app.tsx"
     },
     {
       "label": "ScheduleNotificationManager()",
       "file_type": "code",
       "source_file": "App.tsx",
-      "source_location": "L20",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "app_schedulenotificationmanager",
-      "community": 3,
+      "community": 16,
       "norm_label": "schedulenotificationmanager()"
     },
     {
       "label": "AppContent()",
       "file_type": "code",
       "source_file": "App.tsx",
-      "source_location": "L34",
+      "source_location": "L35",
       "_origin": "ast",
       "id": "app_appcontent",
-      "community": 3,
+      "community": 16,
       "norm_label": "appcontent()"
     },
     {
       "label": "App()",
       "file_type": "code",
       "source_file": "App.tsx",
-      "source_location": "L71",
+      "source_location": "L72",
       "_origin": "ast",
       "id": "app_app",
-      "community": 3,
+      "community": 16,
       "norm_label": "app()"
     },
     {
       "label": "AppScaffold()",
       "file_type": "code",
       "source_file": "App.tsx",
-      "source_location": "L79",
+      "source_location": "L80",
       "_origin": "ast",
       "id": "app_appscaffold",
-      "community": 3,
+      "community": 16,
       "norm_label": "appscaffold()"
     },
     {
@@ -1060,7 +1060,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_detailactionrow",
-      "community": 11,
+      "community": 22,
       "norm_label": "detailactionrow.tsx"
     },
     {
@@ -1070,7 +1070,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_components_detailactionrow_detailaction",
-      "community": 11,
+      "community": 22,
       "norm_label": "detailaction"
     },
     {
@@ -1080,7 +1080,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "src_components_detailactionrow_props",
-      "community": 11,
+      "community": 22,
       "norm_label": "props"
     },
     {
@@ -1090,7 +1090,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "src_components_detailactionrow_detailactionrow",
-      "community": 11,
+      "community": 22,
       "norm_label": "detailactionrow()"
     },
     {
@@ -1100,7 +1100,7 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "src_components_detailactionrow_styles",
-      "community": 11,
+      "community": 22,
       "norm_label": "styles"
     },
     {
@@ -1160,7 +1160,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_markdownbody",
-      "community": 12,
+      "community": 30,
       "norm_label": "markdownbody.tsx"
     },
     {
@@ -1170,7 +1170,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "src_components_markdownbody_props",
-      "community": 12,
+      "community": 30,
       "norm_label": "props"
     },
     {
@@ -1180,7 +1180,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "src_components_markdownbody_markdownbody",
-      "community": 12,
+      "community": 30,
       "norm_label": "markdownbody()"
     },
     {
@@ -1190,7 +1190,7 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "src_components_markdownbody_createstyles",
-      "community": 12,
+      "community": 30,
       "norm_label": "createstyles()"
     },
     {
@@ -1310,7 +1310,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_home_homeherocard",
-      "community": 40,
+      "community": 10,
       "norm_label": "homeherocard.tsx"
     },
     {
@@ -1320,7 +1320,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_components_home_homeherocard_props",
-      "community": 40,
+      "community": 10,
       "norm_label": "props"
     },
     {
@@ -1330,7 +1330,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "src_components_home_homeherocard_homeherocard",
-      "community": 40,
+      "community": 10,
       "norm_label": "homeherocard()"
     },
     {
@@ -1340,7 +1340,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "src_components_home_homeherocard_styles",
-      "community": 40,
+      "community": 10,
       "norm_label": "styles"
     },
     {
@@ -1350,7 +1350,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_home_needtoknowlist",
-      "community": 27,
+      "community": 12,
       "norm_label": "needtoknowlist.tsx"
     },
     {
@@ -1450,7 +1450,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_inputs_searchbar",
-      "community": 10,
+      "community": 12,
       "norm_label": "searchbar.tsx"
     },
     {
@@ -1460,7 +1460,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_components_inputs_searchbar_props",
-      "community": 10,
+      "community": 12,
       "norm_label": "props"
     },
     {
@@ -1480,7 +1480,7 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "src_components_inputs_searchbar_styles",
-      "community": 10,
+      "community": 12,
       "norm_label": "styles"
     },
     {
@@ -1490,7 +1490,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_layout_paddedscrollview",
-      "community": 40,
+      "community": 12,
       "norm_label": "paddedscrollview.tsx"
     },
     {
@@ -1500,7 +1500,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_components_layout_paddedscrollview_props",
-      "community": 40,
+      "community": 12,
       "norm_label": "props"
     },
     {
@@ -1510,7 +1510,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "src_components_layout_paddedscrollview_paddedscrollview",
-      "community": 40,
+      "community": 12,
       "norm_label": "paddedscrollview()"
     },
     {
@@ -1520,7 +1520,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_layout_screencontainer",
-      "community": 22,
+      "community": 12,
       "norm_label": "screencontainer.tsx"
     },
     {
@@ -1530,7 +1530,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "src_components_layout_screencontainer_props",
-      "community": 22,
+      "community": 12,
       "norm_label": "props"
     },
     {
@@ -1550,7 +1550,7 @@
       "source_location": "L147",
       "_origin": "ast",
       "id": "src_components_layout_screencontainer_styles",
-      "community": 22,
+      "community": 12,
       "norm_label": "styles"
     },
     {
@@ -1710,7 +1710,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "src_components_schedule_schedulefilters_schedulefilters",
-      "community": 1,
+      "community": 6,
       "norm_label": "schedulefilters()"
     },
     {
@@ -1780,7 +1780,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_schedule_scheduletrackfilter",
-      "community": 6,
+      "community": 40,
       "norm_label": "scheduletrackfilter.tsx"
     },
     {
@@ -1790,7 +1790,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_components_schedule_scheduletrackfilter_props",
-      "community": 6,
+      "community": 40,
       "norm_label": "props"
     },
     {
@@ -1800,7 +1800,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "src_components_schedule_scheduletrackfilter_scheduletrackfilter",
-      "community": 6,
+      "community": 40,
       "norm_label": "scheduletrackfilter()"
     },
     {
@@ -1810,7 +1810,7 @@
       "source_location": "L80",
       "_origin": "ast",
       "id": "src_components_schedule_scheduletrackfilter_styles",
-      "community": 6,
+      "community": 40,
       "norm_label": "styles"
     },
     {
@@ -1910,7 +1910,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_schedule_sessiontypelegenddialog",
-      "community": 10,
+      "community": 19,
       "norm_label": "sessiontypelegenddialog.tsx"
     },
     {
@@ -1920,7 +1920,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "src_components_schedule_sessiontypelegenddialog_props",
-      "community": 10,
+      "community": 19,
       "norm_label": "props"
     },
     {
@@ -1930,7 +1930,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "src_components_schedule_sessiontypelegenddialog_sessiontypelegenddialog",
-      "community": 10,
+      "community": 19,
       "norm_label": "sessiontypelegenddialog()"
     },
     {
@@ -1940,7 +1940,7 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "src_components_schedule_sessiontypelegenddialog_styles",
-      "community": 10,
+      "community": 19,
       "norm_label": "styles"
     },
     {
@@ -2010,7 +2010,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_settings_settingssection",
-      "community": 41,
+      "community": 1,
       "norm_label": "settingssection.tsx"
     },
     {
@@ -2020,7 +2020,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "src_components_settings_settingssection_cardprops",
-      "community": 41,
+      "community": 1,
       "norm_label": "cardprops"
     },
     {
@@ -2030,7 +2030,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "src_components_settings_settingssection_props",
-      "community": 41,
+      "community": 1,
       "norm_label": "props"
     },
     {
@@ -2040,7 +2040,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_components_settings_settingssection_settingssection",
-      "community": 41,
+      "community": 1,
       "norm_label": "settingssection()"
     },
     {
@@ -2050,7 +2050,7 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "src_components_settings_settingssection_styles",
-      "community": 41,
+      "community": 1,
       "norm_label": "styles"
     },
     {
@@ -2300,7 +2300,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_config_constants",
-      "community": 1,
+      "community": 12,
       "norm_label": "constants.ts"
     },
     {
@@ -2310,7 +2310,7 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "src_config_constants_notification_lead_options",
-      "community": 1,
+      "community": 12,
       "norm_label": "notification_lead_options"
     },
     {
@@ -2320,7 +2320,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_config_constants_max_date_iso",
-      "community": 1,
+      "community": 12,
       "norm_label": "max_date_iso"
     },
     {
@@ -2330,7 +2330,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_data_coc",
-      "community": 22,
+      "community": 3,
       "norm_label": "coc.ts"
     },
     {
@@ -2340,7 +2340,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_data_homeinfo",
-      "community": 27,
+      "community": 12,
       "norm_label": "homeinfo.ts"
     },
     {
@@ -2350,7 +2350,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_data_homeinfo_needtoknowcard",
-      "community": 27,
+      "community": 12,
       "norm_label": "needtoknowcard"
     },
     {
@@ -2360,7 +2360,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "src_data_homeinfo_needtoknow",
-      "community": 27,
+      "community": 12,
       "norm_label": "needtoknow"
     },
     {
@@ -2400,7 +2400,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_data_sessiontypes",
-      "community": 14,
+      "community": 19,
       "norm_label": "sessiontypes.ts"
     },
     {
@@ -2410,7 +2410,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_data_sessiontypes_sessiontypeaccentmap",
-      "community": 14,
+      "community": 19,
       "norm_label": "sessiontypeaccentmap"
     },
     {
@@ -2420,7 +2420,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "src_data_sessiontypes_sessiontypelegendentries",
-      "community": 14,
+      "community": 19,
       "norm_label": "sessiontypelegendentries"
     },
     {
@@ -2440,7 +2440,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "src_hooks_useappnavtheme_useappnavtheme",
-      "community": 3,
+      "community": 16,
       "norm_label": "useappnavtheme()"
     },
     {
@@ -2470,7 +2470,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_hooks_useapptheme",
-      "community": 14,
+      "community": 11,
       "norm_label": "useapptheme.ts"
     },
     {
@@ -2490,7 +2490,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_hooks_usecalendarsync",
-      "community": 1,
+      "community": 14,
       "norm_label": "usecalendarsync.ts"
     },
     {
@@ -2500,7 +2500,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "src_hooks_usecalendarsync_addresult",
-      "community": 1,
+      "community": 14,
       "norm_label": "addresult"
     },
     {
@@ -2510,7 +2510,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "src_hooks_usecalendarsync_removeresult",
-      "community": 1,
+      "community": 14,
       "norm_label": "removeresult"
     },
     {
@@ -2520,7 +2520,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "src_hooks_usecalendarsync_bulkresult",
-      "community": 1,
+      "community": 14,
       "norm_label": "bulkresult"
     },
     {
@@ -2530,7 +2530,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_hooks_usecalendarsync_singleoptions",
-      "community": 1,
+      "community": 14,
       "norm_label": "singleoptions"
     },
     {
@@ -2540,7 +2540,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "src_hooks_usecalendarsync_bulkoptions",
-      "community": 1,
+      "community": 14,
       "norm_label": "bulkoptions"
     },
     {
@@ -2550,7 +2550,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "src_hooks_usecalendarsync_usecalendarsync",
-      "community": 1,
+      "community": 14,
       "norm_label": "usecalendarsync()"
     },
     {
@@ -3160,7 +3160,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_screens_cocscreen",
-      "community": 22,
+      "community": 3,
       "norm_label": "cocscreen.tsx"
     },
     {
@@ -3180,7 +3180,7 @@
       "source_location": "L64",
       "_origin": "ast",
       "id": "src_screens_cocscreen_styles",
-      "community": 22,
+      "community": 3,
       "norm_label": "styles"
     },
     {
@@ -3220,7 +3220,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_screens_homescreen",
-      "community": 40,
+      "community": 12,
       "norm_label": "homescreen.tsx"
     },
     {
@@ -3240,7 +3240,7 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "src_screens_homescreen_styles",
-      "community": 40,
+      "community": 12,
       "norm_label": "styles"
     },
     {
@@ -3250,7 +3250,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_screens_notificationsscreen",
-      "community": 19,
+      "community": 12,
       "norm_label": "notificationsscreen.tsx"
     },
     {
@@ -3260,7 +3260,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "src_screens_notificationsscreen_scheduleditem",
-      "community": 19,
+      "community": 12,
       "norm_label": "scheduleditem"
     },
     {
@@ -3270,7 +3270,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "src_screens_notificationsscreen_notificationsscreen",
-      "community": 19,
+      "community": 12,
       "norm_label": "notificationsscreen()"
     },
     {
@@ -3280,7 +3280,7 @@
       "source_location": "L127",
       "_origin": "ast",
       "id": "src_screens_notificationsscreen_styles",
-      "community": 19,
+      "community": 12,
       "norm_label": "styles"
     },
     {
@@ -3820,7 +3820,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_store_conferencedata",
-      "community": 0,
+      "community": 12,
       "norm_label": "conferencedata.tsx"
     },
     {
@@ -3830,7 +3830,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_store_conferencedata_conferencecontextvalue",
-      "community": 0,
+      "community": 12,
       "norm_label": "conferencecontextvalue"
     },
     {
@@ -3840,7 +3840,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "src_store_conferencedata_conferencedatacontext",
-      "community": 0,
+      "community": 12,
       "norm_label": "conferencedatacontext"
     },
     {
@@ -3850,7 +3850,7 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "src_store_conferencedata_conferencedataprovider",
-      "community": 0,
+      "community": 16,
       "norm_label": "conferencedataprovider()"
     },
     {
@@ -3957,7 +3957,7 @@
       "label": "SettingsState",
       "file_type": "code",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L14",
+      "source_location": "L15",
       "_origin": "ast",
       "id": "src_store_settings_settingsstate",
       "community": 16,
@@ -3967,7 +3967,7 @@
       "label": "SettingsContextValue",
       "file_type": "code",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L25",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "src_store_settings_settingscontextvalue",
       "community": 16,
@@ -3977,7 +3977,7 @@
       "label": "SettingsContext",
       "file_type": "code",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L47",
+      "source_location": "L48",
       "_origin": "ast",
       "id": "src_store_settings_settingscontext",
       "community": 16,
@@ -3987,7 +3987,7 @@
       "label": "ThemeMode",
       "file_type": "code",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L49",
+      "source_location": "L50",
       "_origin": "ast",
       "id": "src_store_settings_thememode",
       "community": 16,
@@ -3997,7 +3997,7 @@
       "label": "TimeZonePreference",
       "file_type": "code",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L51",
+      "source_location": "L52",
       "_origin": "ast",
       "id": "src_store_settings_timezonepreference",
       "community": 16,
@@ -4007,7 +4007,7 @@
       "label": "SettingsProvider()",
       "file_type": "code",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L58",
+      "source_location": "L62",
       "_origin": "ast",
       "id": "src_store_settings_settingsprovider",
       "community": 16,
@@ -4017,7 +4017,7 @@
       "label": "useSettings()",
       "file_type": "code",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L231",
+      "source_location": "L235",
       "_origin": "ast",
       "id": "src_store_settings_usesettings",
       "community": 12,
@@ -4027,7 +4027,7 @@
       "label": "getEffectiveTimeZone()",
       "file_type": "code",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L241",
+      "source_location": "L245",
       "_origin": "ast",
       "id": "src_store_settings_geteffectivetimezone",
       "community": 12,
@@ -4060,7 +4060,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_theme_lightpalette",
-      "community": 14,
+      "community": 11,
       "norm_label": "lightpalette"
     },
     {
@@ -4070,7 +4070,7 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "src_theme_darkpalette",
-      "community": 14,
+      "community": 11,
       "norm_label": "darkpalette"
     },
     {
@@ -4090,7 +4090,7 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "src_theme_spacing",
-      "community": 40,
+      "community": 12,
       "norm_label": "spacing"
     },
     {
@@ -4140,7 +4140,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_types_conference",
-      "community": 12,
+      "community": 0,
       "norm_label": "conference.ts"
     },
     {
@@ -4170,7 +4170,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "src_types_conference_session",
-      "community": 12,
+      "community": 14,
       "norm_label": "session"
     },
     {
@@ -4180,7 +4180,7 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "src_types_conference_breakslot",
-      "community": 12,
+      "community": 14,
       "norm_label": "breakslot"
     },
     {
@@ -4330,7 +4330,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_utils_calendar",
-      "community": 1,
+      "community": 14,
       "norm_label": "calendar.ts"
     },
     {
@@ -4340,7 +4340,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "src_utils_calendar_eventcache",
-      "community": 1,
+      "community": 14,
       "norm_label": "eventcache"
     },
     {
@@ -4350,7 +4350,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "src_utils_calendar_cachekey",
-      "community": 1,
+      "community": 14,
       "norm_label": "cachekey()"
     },
     {
@@ -4360,7 +4360,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "src_utils_calendar_calendaridcache",
-      "community": 1,
+      "community": 14,
       "norm_label": "calendaridcache"
     },
     {
@@ -4370,7 +4370,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "src_utils_calendar_loadcache",
-      "community": 1,
+      "community": 14,
       "norm_label": "loadcache()"
     },
     {
@@ -4380,7 +4380,7 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "src_utils_calendar_savecache",
-      "community": 1,
+      "community": 14,
       "norm_label": "savecache()"
     },
     {
@@ -4390,7 +4390,7 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "src_utils_calendar_ensurecalendaraccess",
-      "community": 1,
+      "community": 14,
       "norm_label": "ensurecalendaraccess()"
     },
     {
@@ -4400,7 +4400,7 @@
       "source_location": "L123",
       "_origin": "ast",
       "id": "src_utils_calendar_addsessiontocalendar",
-      "community": 1,
+      "community": 14,
       "norm_label": "addsessiontocalendar()"
     },
     {
@@ -4410,7 +4410,7 @@
       "source_location": "L179",
       "_origin": "ast",
       "id": "src_utils_calendar_issessionincalendar",
-      "community": 1,
+      "community": 14,
       "norm_label": "issessionincalendar()"
     },
     {
@@ -4420,7 +4420,7 @@
       "source_location": "L194",
       "_origin": "ast",
       "id": "src_utils_calendar_removesessionfromcalendar",
-      "community": 1,
+      "community": 14,
       "norm_label": "removesessionfromcalendar()"
     },
     {
@@ -4430,7 +4430,7 @@
       "source_location": "L219",
       "_origin": "ast",
       "id": "src_utils_calendar_getcalendaridforyear",
-      "community": 1,
+      "community": 14,
       "norm_label": "getcalendaridforyear()"
     },
     {
@@ -4490,7 +4490,7 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "src_utils_format_formatdurationfromms",
-      "community": 19,
+      "community": 12,
       "norm_label": "formatdurationfromms()"
     },
     {
@@ -4650,7 +4650,7 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "src_utils_notifications_normalizetrigger",
-      "community": 19,
+      "community": 12,
       "norm_label": "normalizetrigger()"
     },
     {
@@ -4780,7 +4780,7 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "src_utils_schedule_normalizeiso",
-      "community": 19,
+      "community": 12,
       "norm_label": "normalizeiso()"
     },
     {
@@ -4790,7 +4790,7 @@
       "source_location": "L83",
       "_origin": "ast",
       "id": "src_utils_schedule_tosortablestartitem",
-      "community": 19,
+      "community": 12,
       "norm_label": "tosortablestartitem()"
     },
     {
@@ -4800,7 +4800,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_utils_sessiontypes",
-      "community": 14,
+      "community": 19,
       "norm_label": "sessiontypes.ts"
     },
     {
@@ -4820,7 +4820,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "src_utils_sessiontypes_usesessiontypelegendentries",
-      "community": 10,
+      "community": 19,
       "norm_label": "usesessiontypelegendentries()"
     },
     {
@@ -4970,7 +4970,7 @@
       "source_location": "L67",
       "_origin": "ast",
       "id": "src_utils_time_formatfetchedat",
-      "community": 12,
+      "community": 1,
       "norm_label": "formatfetchedat()"
     },
     {
@@ -4982,6 +4982,16 @@
       "id": "src_utils_time_getlocaltimezone",
       "community": 1,
       "norm_label": "getlocaltimezone()"
+    },
+    {
+      "label": "webAlertPolyfill.ts",
+      "file_type": "code",
+      "source_file": "src/utils/webAlertPolyfill.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_utils_webalertpolyfill",
+      "community": 16,
+      "norm_label": "webalertpolyfill.ts"
     },
     {
       "label": "tsconfig.json",
@@ -6943,7 +6953,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L71",
+      "source_location": "L72",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "app_app",
@@ -6953,7 +6963,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L34",
+      "source_location": "L35",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "app_appcontent",
@@ -6963,7 +6973,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L79",
+      "source_location": "L80",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "app_appscaffold",
@@ -6973,7 +6983,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "app_schedulenotificationmanager",
@@ -6984,7 +6994,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "src_components_status_installprompt",
@@ -6995,7 +7005,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "src_hooks_useappnavtheme",
@@ -7006,7 +7016,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "src_hooks_useappnavtheme_useappnavtheme",
@@ -7017,7 +7027,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "src_hooks_usenotificationdeeplink",
@@ -7028,7 +7038,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "src_hooks_usenotificationdeeplink_usenotificationdeeplink",
@@ -7039,7 +7049,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "src_hooks_usepwainstallprompt",
@@ -7050,7 +7060,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "src_hooks_usepwainstallprompt_usepwainstallprompt",
@@ -7061,7 +7071,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L14",
+      "source_location": "L15",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "src_hooks_useschedulenotifications",
@@ -7072,7 +7082,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L14",
+      "source_location": "L15",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "src_hooks_useschedulenotifications_useschedulenotifications",
@@ -7083,7 +7093,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "src_navigation_apptabs",
@@ -7094,7 +7104,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "src_navigation_apptabs_apptabs",
@@ -7105,7 +7115,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L9",
+      "source_location": "L10",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "src_navigation_navigationref",
@@ -7116,7 +7126,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L9",
+      "source_location": "L10",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "src_navigation_navigationref_navigationref",
@@ -7127,7 +7137,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L11",
+      "source_location": "L12",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "src_navigation_stacks",
@@ -7138,7 +7148,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L11",
+      "source_location": "L12",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "src_navigation_stacks_builtstacks",
@@ -7149,7 +7159,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L12",
+      "source_location": "L13",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "src_store_conferencedata",
@@ -7160,7 +7170,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L12",
+      "source_location": "L13",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "src_store_conferencedata_conferencedataprovider",
@@ -7171,7 +7181,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "src_store_favorites",
@@ -7182,7 +7192,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "src_store_favorites_favoritesprovider",
@@ -7193,7 +7203,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "src_store_settings",
@@ -7204,7 +7214,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "src_store_settings_settingsprovider",
@@ -7215,10 +7225,21 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0,
       "source": "app_tsx_app",
       "target": "src_store_settings_usesettings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "App.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "app_tsx_app",
+      "target": "src_utils_webalertpolyfill",
       "confidence_score": 1.0
     },
     {
@@ -7226,7 +7247,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0,
       "source": "app_schedulenotificationmanager",
       "target": "src_hooks_useschedulenotifications_useschedulenotifications",
@@ -7237,7 +7258,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L36",
+      "source_location": "L37",
       "weight": 1.0,
       "source": "app_appcontent",
       "target": "src_hooks_useappnavtheme_useappnavtheme",
@@ -7248,7 +7269,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L37",
+      "source_location": "L38",
       "weight": 1.0,
       "source": "app_appcontent",
       "target": "src_hooks_usenotificationdeeplink_usenotificationdeeplink",
@@ -7259,7 +7280,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L42",
+      "source_location": "L43",
       "weight": 1.0,
       "source": "app_appcontent",
       "target": "src_hooks_usepwainstallprompt_usepwainstallprompt",
@@ -7270,7 +7291,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "App.tsx",
-      "source_location": "L35",
+      "source_location": "L36",
       "weight": 1.0,
       "source": "app_appcontent",
       "target": "src_store_settings_usesettings",
@@ -12045,7 +12066,7 @@
       "context": "export",
       "confidence": "EXTRACTED",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L239",
+      "source_location": "L243",
       "weight": 1.0,
       "source": "src_store_settings",
       "target": "src_config_conference",
@@ -12067,7 +12088,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L3",
+      "source_location": "L4",
       "weight": 1.0,
       "source": "src_store_settings",
       "target": "src_config_conference_conference_years",
@@ -12079,7 +12100,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/store/settings.tsx",
-      "source_location": "L103",
+      "source_location": "L107",
       "weight": 1.0,
       "source": "src_store_settings_settingsprovider",
       "target": "src_config_conference_conference_years"
@@ -12100,7 +12121,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L3",
+      "source_location": "L4",
       "weight": 1.0,
       "source": "src_store_settings",
       "target": "src_config_conference_default_conference_year",
@@ -12177,7 +12198,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L3",
+      "source_location": "L4",
       "weight": 1.0,
       "source": "src_store_settings",
       "target": "src_config_conference_getconferencemeta",
@@ -12189,7 +12210,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/store/settings.tsx",
-      "source_location": "L246",
+      "source_location": "L250",
       "weight": 1.0,
       "source": "src_store_settings_geteffectivetimezone",
       "target": "src_config_conference_getconferencemeta"
@@ -12263,7 +12284,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0,
       "source": "src_store_settings",
       "target": "src_config_constants",
@@ -18439,7 +18460,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L241",
+      "source_location": "L245",
       "weight": 1.0,
       "source": "src_store_settings",
       "target": "src_store_settings_geteffectivetimezone",
@@ -18449,7 +18470,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L47",
+      "source_location": "L48",
       "weight": 1.0,
       "source": "src_store_settings",
       "target": "src_store_settings_settingscontext",
@@ -18459,7 +18480,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0,
       "source": "src_store_settings",
       "target": "src_store_settings_settingscontextvalue",
@@ -18469,7 +18490,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L58",
+      "source_location": "L62",
       "weight": 1.0,
       "source": "src_store_settings",
       "target": "src_store_settings_settingsprovider",
@@ -18479,7 +18500,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L14",
+      "source_location": "L15",
       "weight": 1.0,
       "source": "src_store_settings",
       "target": "src_store_settings_settingsstate",
@@ -18489,7 +18510,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L49",
+      "source_location": "L50",
       "weight": 1.0,
       "source": "src_store_settings",
       "target": "src_store_settings_thememode",
@@ -18499,7 +18520,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L51",
+      "source_location": "L52",
       "weight": 1.0,
       "source": "src_store_settings",
       "target": "src_store_settings_timezonepreference",
@@ -18509,7 +18530,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L231",
+      "source_location": "L235",
       "weight": 1.0,
       "source": "src_store_settings",
       "target": "src_store_settings_usesettings",
@@ -18520,7 +18541,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L9",
+      "source_location": "L10",
       "weight": 1.0,
       "source": "src_store_settings",
       "target": "src_utils_haptics",
@@ -18531,7 +18552,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L9",
+      "source_location": "L10",
       "weight": 1.0,
       "source": "src_store_settings",
       "target": "src_utils_haptics_sethapticsenabledruntime",
@@ -18542,7 +18563,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0,
       "source": "src_store_settings",
       "target": "src_utils_storage",
@@ -18553,7 +18574,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0,
       "source": "src_store_settings",
       "target": "src_utils_storage_loadjsonfromstorage",
@@ -18564,7 +18585,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/store/settings.tsx",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0,
       "source": "src_store_settings",
       "target": "src_utils_storage_savejsontostorage",
@@ -18576,7 +18597,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/store/settings.tsx",
-      "source_location": "L189",
+      "source_location": "L193",
       "weight": 1.0,
       "source": "src_store_settings_settingsprovider",
       "target": "src_utils_haptics_sethapticsenabledruntime"
@@ -18587,7 +18608,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/store/settings.tsx",
-      "source_location": "L94",
+      "source_location": "L98",
       "weight": 1.0,
       "source": "src_store_settings_settingsprovider",
       "target": "src_utils_storage_savejsontostorage"
@@ -21021,5 +21042,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "2347bed22ed0ae878622266468f43a200824b9cc"
+  "built_at_commit": "7d99d7cc47bb7f3d4527f20796203aff01b68517"
 }

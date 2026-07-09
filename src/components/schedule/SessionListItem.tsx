@@ -12,7 +12,7 @@ import SpeakerAvatar from "../SpeakerAvatar";
 type Props = {
   session: Session;
   isFavorite: boolean;
-  onPress: () => void;
+  onPress: (id: string) => void;
   onToggleFavorite?: (id: string) => void;
   timeZone?: string;
   speakerAvatars?: Record<string, string | null | undefined>;
@@ -43,7 +43,7 @@ function SessionListItem({
         },
       ]}
       mode="outlined"
-      onPress={onPress}
+      onPress={() => onPress(session.id)}
     >
       <Card.Title
         title={session.title}

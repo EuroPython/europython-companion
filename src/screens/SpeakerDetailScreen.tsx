@@ -146,7 +146,7 @@ export default function SpeakerDetailScreen({ route }: any) {
                     key={s.id}
                     session={s}
                     isFavorite={isFavorite(s.id)}
-                    onPress={() => openSession(s.id)}
+                    onPress={openSession}
                     onToggleFavorite={toggleFavorite}
                     timeZone={timeZone}
                     speakerAvatars={speakerAvatars}
