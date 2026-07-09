@@ -20,9 +20,9 @@
     "semantic_hash": "abba34ee03076e881f01c31c57d8f27a"
   },
   "package.json": {
-    "mtime": 1783636684.8072147,
-    "ast_hash": "ccd6b62e1694b25d61a7cebba5a6326c",
-    "semantic_hash": ""
+    "mtime": 1783594386.0495856,
+    "ast_hash": "22cd524e7ef007d7a31ef4f05df789da",
+    "semantic_hash": "22cd524e7ef007d7a31ef4f05df789da"
   },
   "src/components/ContactCard.tsx": {
     "mtime": 1783469775.0390823,
@@ -370,9 +370,9 @@
     "semantic_hash": "472f26d18ae0257901caf8457171f59f"
   },
   ".github/workflows/ci.yml": {
-    "mtime": 1783634879.2045,
-    "ast_hash": "9a712b4ec32e48810a6f677b21028885",
-    "semantic_hash": ""
+    "mtime": 1765166949.4197311,
+    "ast_hash": "a3fe1b7ed0105e35947cb268d3d54076",
+    "semantic_hash": "a3fe1b7ed0105e35947cb268d3d54076"
   },
   "docs/README.md": {
     "mtime": 1783630367.163603,
@@ -425,7 +425,7 @@
     "semantic_hash": "97add069815c58fdcc6d5cb160115732"
   },
   "pnpm-workspace.yaml": {
-    "mtime": 1783636071.9057047,
+    "mtime": 1783464863.385552,
     "ast_hash": "fd0e862f699bf0e51f550895b448a340",
     "semantic_hash": "fd0e862f699bf0e51f550895b448a340"
   },
@@ -480,9 +480,9 @@
     "semantic_hash": "2c83f1c39877ddcfb858cc7e2436c88c"
   },
   "CLAUDE.md": {
-    "mtime": 1783634341.7141914,
-    "ast_hash": "59cae1e723c086051d1b3b7e897cd46d",
-    "semantic_hash": ""
+    "mtime": 1783630398.6253607,
+    "ast_hash": "1ce10b422f5aa9705dd04cf227626e4d",
+    "semantic_hash": "1ce10b422f5aa9705dd04cf227626e4d"
   },
   "src/services/conference.ts": {
     "mtime": 1783476120.8322418,
@@ -558,10 +558,5 @@
     "mtime": 1783522027.5180123,
     "ast_hash": "1330fd102bb8621fd7595fd76cf5810c",
     "semantic_hash": "1330fd102bb8621fd7595fd76cf5810c"
-  },
-  ".github/dependabot.yml": {
-    "mtime": 1783636996.9444263,
-    "ast_hash": "c4bdc327a3a8a6d9aceec394b508ada0",
-    "semantic_hash": ""
   }
 }
