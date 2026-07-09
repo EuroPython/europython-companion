@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  typecheck:
+  typecheck-format:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -26,3 +26,6 @@ jobs:
 
       - name: Type check
         run: pnpm typecheck
+
+      - name: Format check
+        run: pnpm format:check

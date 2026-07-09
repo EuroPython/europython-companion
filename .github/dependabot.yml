@@ -5,6 +5,10 @@ updates:
     schedule:
       interval: "weekly"
 
+    # Minimum release age required for pnpm
+    cooldown:
+      default-days: 1
+
     allow:
       - dependency-name: "baseline-browser-mapping"
       - dependency-name: "prettier"
