@@ -23,12 +23,15 @@ Package manager is pnpm (pinned to `pnpm@11.10.0` in `package.json`).
 pnpm install            # install deps
 pnpm start              # Expo dev server (QR/simulator)
 pnpm ios                # run on iOS simulator (generates ios/ via Expo prebuild if missing — gitignored, not committed)
-pnpm android             # run on Android emulator/device (same, for android/)
-pnpm web                 # web dev server
-pnpm typecheck            # tsc --noEmit — this is what CI runs, always run before considering work done
-pnpm format               # prettier --write
-pnpm format:check         # prettier --check
-pnpm build:web             # expo export -p web + workbox service worker generation
+pnpm android            # run on Android emulator/device (same, for android/)
+pnpm web                # web dev server
+pnpm typecheck          # tsc --noEmit — this is what CI runs, always run before considering work done
+pnpm format             # prettier --write
+pnpm format:check       # prettier --check
+pnpm build:web          # expo export -p web + workbox service worker generation
+pnpm pwa                # build:web + serve dist/ on 8081
+pnpm tunnel             # ngrok tunnel port 8081 (for PWA testing with SSL)
+pnpm prebuild           # expo prebuild (generates clean native folders) - use pnpm ios/android instead if you just want to run the app
 ```
 
 There is no test runner configured (see `docs/testing.md`). CI (`.github/workflows/ci.yml`) only runs `pnpm typecheck`. Validate changes with `pnpm typecheck` plus manual exercise of the affected flow (schedule browsing, favorites, session detail, settings, notifications).
