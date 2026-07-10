@@ -34,7 +34,7 @@ See [docs/navigation.md](navigation.md) for a full worked example.
 - When changing schedule data shape, keep `ConferenceData` normalization (`src/services/conferenceTransform.ts`) consistent with `src/types/raw.ts`/`src/types/conference.ts`, and bump `SCHEMA_VERSION` in `src/config/conference.ts` (see [Data and state](data-and-state.md#cache-invalidation)).
 
 ## Native project workflow
-`ios/` and `android/` are **gitignored** — they're generated locally by Expo's prebuild ("Continuous Native Generation") the first time you run `pnpm ios`/`pnpm android`, not checked into the repo. If you need to change native configuration (permissions, icons, plugins), change `app.json` and re-run prebuild (`expo prebuild --clean` or just re-run `pnpm ios`/`pnpm android`) rather than hand-editing the generated native projects, since those edits won't survive a clean prebuild.
+`ios/` and `android/` are **gitignored** — they're generated locally by Expo's prebuild ("Continuous Native Generation") the first time you run `pnpm ios`/`pnpm android`, not checked into the repo. If you need to change native configuration (permissions, icons, plugins), change `app.config.js` and re-run prebuild (`expo prebuild --clean` or just re-run `pnpm ios`/`pnpm android`) rather than hand-editing the generated native projects, since those edits won't survive a clean prebuild.
 
 ## Testing onboarding flows
 To re-run the first-run experience, go to Settings and use "Restart onboarding experience" (`resetOnboardingSeen`). The app switches back to the onboarding stack on the next render, since `AppContent` in `App.tsx` gates on `onboardingSeen` directly.

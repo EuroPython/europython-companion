@@ -41,7 +41,7 @@ pnpm pwa
 (builds web, then serves `dist/` on port 8081 via `serve`).
 
 ## Native builds
-`pnpm ios` / `pnpm android` run against locally-generated `ios/`/`android/` projects (Expo's Continuous Native Generation / prebuild workflow — these folders are gitignored, not committed). If you only need JS/UI changes, `pnpm start` is usually enough; you don't need a native build unless you're changing native config (`app.json` plugins, permissions, icons) or adding a library with native code.
+`pnpm ios` / `pnpm android` run against locally-generated `ios/`/`android/` projects (Expo's Continuous Native Generation / prebuild workflow — these folders are gitignored, not committed). If you only need JS/UI changes, `pnpm start` is usually enough; you don't need a native build unless you're changing native config (`app.config.js` plugins, permissions, icons) or adding a library with native code.
 
 ## Code style and checks
 - Format code and docs with:

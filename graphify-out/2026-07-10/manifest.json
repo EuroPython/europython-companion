@@ -5,9 +5,9 @@
     "semantic_hash": "a4129bd83c4b17c9ecfded7131548ee0"
   },
   "app.json": {
-    "mtime": 1783507725.9981208,
-    "ast_hash": "c9443222c6c4b6914146796240d4a4a1",
-    "semantic_hash": "c9443222c6c4b6914146796240d4a4a1"
+    "mtime": 1783680254.9884303,
+    "ast_hash": "00f753f1d04bfec7b34130a264e6aa52",
+    "semantic_hash": ""
   },
   "babel.config.js": {
     "mtime": 1783592641.8317802,
@@ -20,9 +20,9 @@
     "semantic_hash": "abba34ee03076e881f01c31c57d8f27a"
   },
   "package.json": {
-    "mtime": 1783594386.0495856,
-    "ast_hash": "22cd524e7ef007d7a31ef4f05df789da",
-    "semantic_hash": "22cd524e7ef007d7a31ef4f05df789da"
+    "mtime": 1783636684.8072147,
+    "ast_hash": "ccd6b62e1694b25d61a7cebba5a6326c",
+    "semantic_hash": ""
   },
   "src/components/ContactCard.tsx": {
     "mtime": 1783469775.0390823,
@@ -369,25 +369,20 @@
     "ast_hash": "472f26d18ae0257901caf8457171f59f",
     "semantic_hash": "472f26d18ae0257901caf8457171f59f"
   },
-  ".github/workflows/ci.yml": {
-    "mtime": 1765166949.4197311,
-    "ast_hash": "a3fe1b7ed0105e35947cb268d3d54076",
-    "semantic_hash": "a3fe1b7ed0105e35947cb268d3d54076"
-  },
   "docs/README.md": {
-    "mtime": 1783630367.163603,
-    "ast_hash": "64b21b0a0b028207bdb89bb61dfda749",
-    "semantic_hash": "64b21b0a0b028207bdb89bb61dfda749"
+    "mtime": 1783638881.0425332,
+    "ast_hash": "520383a7a10565f6542500beeb2d328a",
+    "semantic_hash": ""
   },
   "docs/architecture.md": {
-    "mtime": 1783630176.6451595,
-    "ast_hash": "e9b4754d6fe3476f601a41495ec68a4d",
-    "semantic_hash": "e9b4754d6fe3476f601a41495ec68a4d"
+    "mtime": 1783680305.7925012,
+    "ast_hash": "f2c0f1192bd2f7b295cf0d26cb77e861",
+    "semantic_hash": ""
   },
   "docs/configuration.md": {
-    "mtime": 1783630224.8171177,
-    "ast_hash": "1e49697cceda33450f52a28a305825e6",
-    "semantic_hash": "1e49697cceda33450f52a28a305825e6"
+    "mtime": 1783680289.8918405,
+    "ast_hash": "4453b0fa2e715b248b5889342fc57b54",
+    "semantic_hash": ""
   },
   "docs/data-and-state.md": {
     "mtime": 1783630309.405428,
@@ -425,7 +420,7 @@
     "semantic_hash": "97add069815c58fdcc6d5cb160115732"
   },
   "pnpm-workspace.yaml": {
-    "mtime": 1783464863.385552,
+    "mtime": 1783636071.9057047,
     "ast_hash": "fd0e862f699bf0e51f550895b448a340",
     "semantic_hash": "fd0e862f699bf0e51f550895b448a340"
   },
@@ -480,9 +475,9 @@
     "semantic_hash": "2c83f1c39877ddcfb858cc7e2436c88c"
   },
   "CLAUDE.md": {
-    "mtime": 1783630398.6253607,
-    "ast_hash": "1ce10b422f5aa9705dd04cf227626e4d",
-    "semantic_hash": "1ce10b422f5aa9705dd04cf227626e4d"
+    "mtime": 1783634341.7141914,
+    "ast_hash": "59cae1e723c086051d1b3b7e897cd46d",
+    "semantic_hash": ""
   },
   "src/services/conference.ts": {
     "mtime": 1783476120.8322418,
@@ -520,9 +515,9 @@
     "semantic_hash": "6ae4ac9fc326d4da6d2bef5fe1d60249"
   },
   "public/workbox-config.js": {
-    "mtime": 1783511555.4660902,
-    "ast_hash": "361090bb6c1e9319345fc44cab9f20a8",
-    "semantic_hash": "361090bb6c1e9319345fc44cab9f20a8"
+    "mtime": 1783680264.1419723,
+    "ast_hash": "315a53c2f94b0974b0917f27b7b6391a",
+    "semantic_hash": ""
   },
   "public/index.html": {
     "mtime": 1783522900.4504738,
@@ -558,5 +553,20 @@
     "mtime": 1783522027.5180123,
     "ast_hash": "1330fd102bb8621fd7595fd76cf5810c",
     "semantic_hash": "1330fd102bb8621fd7595fd76cf5810c"
+  },
+  ".github/dependabot.yml": {
+    "mtime": 1783637395.7059014,
+    "ast_hash": "9ec5de70d4d506eb640975843d980a8a",
+    "semantic_hash": ""
+  },
+  ".github/workflows/ci.yaml": {
+    "mtime": 1783638881.0542812,
+    "ast_hash": "43afbfc321d4dec3149182fac49d6836",
+    "semantic_hash": ""
+  },
+  ".github/workflows/deploy-web.yaml": {
+    "mtime": 1783638881.0544105,
+    "ast_hash": "83acc4478400734843f14d87c7fa82ca",
+    "semantic_hash": ""
   }
 }

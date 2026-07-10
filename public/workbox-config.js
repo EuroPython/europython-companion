@@ -1,10 +1,13 @@
+// Must match the WEB_BASE_URL used for the same build (see app.config.js).
+const baseUrl = process.env.WEB_BASE_URL ?? "";
+
 module.exports = {
   globDirectory: "dist",
   globPatterns: ["**/*.{js,css,html,png,ico,json,webp,ttf,woff,woff2}"],
-  swDest: "dist/sw.js",
+  swDest: "dist/service-worker.js",
   skipWaiting: true,
   clientsClaim: true,
-  navigateFallback: "/index.html",
+  navigateFallback: `${baseUrl}/index.html`,
   globIgnores: [], // so the fonts in node_modules are included
   maximumFileSizeToCacheInBytes: 10 * 1024 * 1024,
   runtimeCaching: [

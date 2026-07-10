@@ -6,7 +6,6 @@
   "4": "App Root Composition",
   "5": "Package Dependencies",
   "6": "Schedule List Items",
-  "7": "Android App Config",
   "8": "Dev Dependencies & Tooling",
   "9": "CoC Contacts UI",
   "10": "Navigation Routes & Refs",
@@ -16,7 +15,6 @@
   "14": "Theme & Navigation Theme",
   "15": "PWA Icons & Manifest",
   "16": "Session Type Legend",
-  "17": "Home Hero & Search",
   "18": "Schedule Filters UI",
   "19": "Settings Row Components",
   "20": "Detail Action Row",
@@ -52,7 +50,6 @@
   "50": "Shared Logic Placement Doc",
   "51": "Run Commands Doc",
   "52": "CI Type Check Doc",
-  "53": "App Entry Point",
   "54": "Apple Touch Icon",
   "55": "Web Reset Style",
   "56": "Workbox Config",
@@ -79,5 +76,12 @@
   "77": "Documentation Set Overview",
   "78": "Docs Rewritten From Full Source Read",
   "79": "Good First Test Candidates",
-  "80": "Service Worker Registration Script"
+  "80": "Service Worker Registration Script",
+  "81": "theme.ts",
+  "82": "package.json",
+  "83": "devDependencies",
+  "84": "DetailActionRow.tsx",
+  "85": "ScheduleLevelFilter.tsx",
+  "86": "MarkdownBody.tsx",
+  "87": "ScheduleTrackFilter.tsx"
 }
