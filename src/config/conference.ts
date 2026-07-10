@@ -19,15 +19,7 @@ export const CONFERENCE_META: Record<number, ConferenceMeta> = {
     title: "EuroPython 2026",
     subtitle: "Kraków · July 13-19",
     timeZone: "Europe/Warsaw",
-    preferredRoomOrder: [
-      "S1",
-      "S2",
-      "S3A",
-      "S3B",
-      "S4",
-      "S4A",
-      "S4B",
-    ],
+    preferredRoomOrder: ["S1", "S2", "S3A", "S3B", "S4", "S4A", "S4B"],
   },
   2025: {
     title: "EuroPython 2025",
