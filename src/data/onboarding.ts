@@ -16,7 +16,7 @@ export const onboardingSlides: Slide[] = [
   {
     key: "overview",
     title: "Everything you need, in one place",
-    body: "Browse the schedule, explore speakers, and create your personalized agenda with favorites.",
+    body: "Browse the schedule, explore speakers, and create your personalized agenda with favourites.",
   },
   {
     key: "plan",

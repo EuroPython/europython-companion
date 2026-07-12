@@ -60,7 +60,7 @@ function SessionListItem({
               favoriteColor={starColor}
               defaultColor={colors.onSurfaceVariant}
               accessibilityLabel={
-                isFavorite ? "Remove from favorites" : "Add to favorites"
+                isFavorite ? "Remove from favourites" : "Add to favourites"
               }
               style={{ marginRight: spacing.xs }}
             />

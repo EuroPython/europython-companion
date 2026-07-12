@@ -77,7 +77,9 @@ export default function UpcomingList({ data, limit = 4, favoritesOnly = false }:
         <Card.Content>
           {header}
           <Text variant="bodySmall" style={{ color: colors.onSurfaceVariant }}>
-            {favoritesOnly ? "No upcoming favorites." : "No upcoming sessions or breaks."}
+            {favoritesOnly
+              ? "No upcoming favourites."
+              : "No upcoming sessions or breaks."}
           </Text>
           {helperNote}
         </Card.Content>

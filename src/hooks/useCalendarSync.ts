@@ -126,12 +126,12 @@ export function useCalendarSync() {
   const confirmAddAllSessions = useCallback(
     (sessions: Session[], year: number, opts?: BulkOptions) => {
       if (sessions.length === 0) {
-        Alert.alert("No favorites to add");
+        Alert.alert("No favourites to add");
         return;
       }
       const lead = opts?.leadMinutes ?? DEFAULT_NOTIFICATION_LEAD_MINUTES;
       Alert.alert(
-        "Add all favorites?",
+        "Add all favourites?",
         `We'll add all starred sessions to your calendar with a ${lead}-minute reminder.`,
         [
           { text: "Cancel", style: "cancel" },

@@ -117,7 +117,7 @@ export default function SettingsScreen() {
 
   const handleExportFavorites = async () => {
     if (favorites.size === 0) {
-      Alert.alert("No favorites to export");
+      Alert.alert("No favourites to export");
       return;
     }
     const lines = Array.from(favorites).map((id) => {
@@ -131,18 +131,18 @@ export default function SettingsScreen() {
     try {
       await Share.share({ message });
     } catch (err) {
-      console.warn("Failed to share favorites", err);
-      Alert.alert("Could not export favorites");
+      console.warn("Failed to share favourites", err);
+      Alert.alert("Could not export favourites");
     }
   };
 
   const handleClearFavorites = () => {
     if (favorites.size === 0) {
-      Alert.alert("No favorites to clear");
+      Alert.alert("No favourites to clear");
       return;
     }
     Alert.alert(
-      "Clear favorites",
+      "Clear favourites",
       "Remove all starred sessions?",
       [
         { text: "Cancel", style: "cancel" },
@@ -206,16 +206,16 @@ export default function SettingsScreen() {
           />
         </SettingsSection>
 
-        <SettingsSection title="Favorites">
+        <SettingsSection title="Favourites">
           <Text variant="bodyMedium">
             Saved sessions (year {favoritesYear ?? conferenceYear}): {favorites.size}
           </Text>
           <View style={styles.row}>
             <Button mode="text" onPress={handleExportFavorites}>
-              Export favorites
+              Export favourites
             </Button>
             <Button mode="text" onPress={handleClearFavorites}>
-              Clear favorites
+              Clear favourites
             </Button>
           </View>
         </SettingsSection>
@@ -238,7 +238,7 @@ export default function SettingsScreen() {
             <Card.Content>
               <SettingsSwitchRow
                 title="Upcoming session reminders"
-                subtitle={`Receive a reminder ${notificationLeadMinutes} minutes before keynotes and any sessions you have favorited start.`}
+                subtitle={`Receive a reminder ${notificationLeadMinutes} minutes before keynotes and any sessions you have favourited start.`}
                 value={notificationsEnabled}
                 disabled={Platform.OS === "web"}
                 onValueChange={async (val) => {
@@ -307,7 +307,7 @@ export default function SettingsScreen() {
         <SettingsSection title="Haptics">
           <SettingsSwitchRow
             title="Haptic feedback"
-            subtitle="Haptic feedback for actions like refreshing, toggles, onboarding steps, and favorites/calendar. Some haptics may still occur if system-level."
+            subtitle="Haptic feedback for actions like refreshing, toggles, onboarding steps, and favourites/calendar. Some haptics may still occur if system-level."
             value={hapticsEnabled}
             disabled={Platform.OS === "web"}
             onValueChange={async (val) => {
@@ -349,7 +349,7 @@ export default function SettingsScreen() {
           <Text variant="bodyMedium">EuroPython Companion</Text>
           <Text variant="bodySmall" style={{ color: colors.onSurfaceVariant }}>
             Your companion app for EuroPython conferences. Plan your schedule, star
-            favorite sessions, and stay updated with the latest information.
+            favourite sessions, and stay updated with the latest information.
           </Text>
         </SettingsSection>
       </PaddedScrollView>

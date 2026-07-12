@@ -62,7 +62,7 @@ export function FavoritesProvider({
       try {
         await saveFavorites(next, year);
       } catch (err) {
-        console.warn("Failed to save favorites", err);
+        console.warn("Failed to save favourites", err);
         throw err;
       }
     },
@@ -84,7 +84,7 @@ export function FavoritesProvider({
         try {
           await persist(nextState);
         } catch (err) {
-          console.warn("Failed to save favorites", err);
+          console.warn("Failed to save favourites", err);
           if (prevSnapshot) {
             setFavorites(prevSnapshot);
           }
@@ -132,7 +132,7 @@ export function FavoritesProvider({
         try {
           await persist(new Set());
         } catch (err) {
-          console.warn("Failed to clear favorites", err);
+          console.warn("Failed to clear favourites", err);
         }
       },
       year,
