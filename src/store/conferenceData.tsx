@@ -11,7 +11,10 @@ import { AppState, type AppStateStatus } from "react-native";
 import NetInfo, { type NetInfoState } from "@react-native-community/netinfo";
 
 import { DATA_REFRESH_INTERVAL_MS } from "@config/constants";
-import { loadConferenceDataWithMeta } from "@services/conference";
+import {
+  loadCachedConferenceData,
+  loadConferenceDataWithMeta,
+} from "@services/conference";
 import { loadWifiInfo, WifiInfo } from "@services/wifi";
 import { ConferenceData } from "@app-types/conference";
 
@@ -118,8 +121,22 @@ export function ConferenceDataProvider({
     setFromCache(false);
     setError(null);
     setResolvedYear(year);
+    setLoading(true); // avoid a data=null && loading=false empty-state flash on year-switch
     hasLoaded.current = false;
-    fetchData();
+    const requestId = (requestIdRef.current += 1);
+    // Seed instantly from cache (if any) so the UI never blocks on the network,
+    // then let fetchData() below run as a background revalidation.
+    loadCachedConferenceData(year).then((cached) => {
+      if (requestId !== requestIdRef.current) return; // year changed mid-read
+      if (cached) {
+        setData(cached.data);
+        setFromCache(true);
+        setFetchedAt(cached.fetchedAt);
+        setLoading(false);
+        hasLoaded.current = true; // so fetchData() below runs as a background refresh
+      }
+      fetchData();
+    });
   }, [fetchData, year]);
 
   useEffect(() => {

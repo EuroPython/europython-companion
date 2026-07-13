@@ -8,3 +8,5 @@ export const DATE_ISO_LOCALE = "en-CA"; // so it's YYYY-MM-DD
 export const UPCOMING_REFRESH_INTERVAL_MS = 60_000;
 
 export const DATA_REFRESH_INTERVAL_MS = 10 * 60_000;
+
+export const FETCH_TIMEOUT_MS = 12_000;

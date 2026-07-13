@@ -65,9 +65,9 @@
     "semantic_hash": "4a02bbe819a92a94bb3e46311eba7f1b"
   },
   "src/components/home/UpcomingList.tsx": {
-    "mtime": 1783934789.1246808,
-    "ast_hash": "07418ece2a90cf6ec7ce88c6eb9e2cd0",
-    "semantic_hash": ""
+    "mtime": 1783589383.907481,
+    "ast_hash": "130367767c981e076ddcff903906d8c9",
+    "semantic_hash": "130367767c981e076ddcff903906d8c9"
   },
   "src/components/inputs/ChipPicker.tsx": {
     "mtime": 1783294630.4939055,
@@ -110,9 +110,9 @@
     "semantic_hash": "a17c5f8af40b78336c29f8b0a46d77b4"
   },
   "src/components/schedule/SessionListItem.tsx": {
-    "mtime": 1783934789.12531,
-    "ast_hash": "f41bd34ae48814992d6dd0b350297d37",
-    "semantic_hash": ""
+    "mtime": 1783525600.029228,
+    "ast_hash": "a0b594ebe817f102188fffbfd8a83461",
+    "semantic_hash": "a0b594ebe817f102188fffbfd8a83461"
   },
   "src/components/schedule/SessionTypeLegendDialog.tsx": {
     "mtime": 1783294630.4950526,
@@ -150,14 +150,14 @@
     "semantic_hash": "baa4eea374afe6c321c7db8baa181173"
   },
   "src/config/conference.ts": {
-    "mtime": 1783715809.3083968,
-    "ast_hash": "0db1ab5902e15828dfce48d377fa0475",
-    "semantic_hash": ""
+    "mtime": 1783588890.9688241,
+    "ast_hash": "674dedbaefb4247804e42d3e6b018f1e",
+    "semantic_hash": "674dedbaefb4247804e42d3e6b018f1e"
   },
   "src/config/constants.ts": {
-    "mtime": 1783939372.777922,
-    "ast_hash": "cd3a5b3f21c2fff84e86f945a7485cb8",
-    "semantic_hash": ""
+    "mtime": 1783474711.052913,
+    "ast_hash": "502a18338cfb495c9c725990e3d7c90d",
+    "semantic_hash": "502a18338cfb495c9c725990e3d7c90d"
   },
   "src/data/coc.ts": {
     "mtime": 1766706936.9024673,
@@ -170,14 +170,14 @@
     "semantic_hash": "76be596c9c737253ec1ccac693854665"
   },
   "src/data/homeInfo.ts": {
-    "mtime": 1783714784.1917884,
-    "ast_hash": "cf9fd6596b98fdcbc6add95a10bb0347",
+    "mtime": 1783706536.7020166,
+    "ast_hash": "8988391271a95105fee87ad5d482dd85",
     "semantic_hash": ""
   },
   "src/data/onboarding.ts": {
-    "mtime": 1783934789.1258724,
-    "ast_hash": "588b1131cad46edf5d6547573e3f8267",
-    "semantic_hash": ""
+    "mtime": 1766706936.9021335,
+    "ast_hash": "c1d5bb631bc8e188204fa4588a90f7e7",
+    "semantic_hash": "c1d5bb631bc8e188204fa4588a90f7e7"
   },
   "src/data/sessionTypes.ts": {
     "mtime": 1766706936.9018793,
@@ -195,9 +195,9 @@
     "semantic_hash": "b56fd2ccb803eeb55c8a03f0598d53fa"
   },
   "src/hooks/useCalendarSync.ts": {
-    "mtime": 1783934789.1261928,
-    "ast_hash": "a05eec2971e87b8d15a3bcd9a8c2a43e",
-    "semantic_hash": ""
+    "mtime": 1783469775.1419356,
+    "ast_hash": "a5e6d01b5ef43f572ea2e2ea19007712",
+    "semantic_hash": "a5e6d01b5ef43f572ea2e2ea19007712"
   },
   "src/hooks/useEffectiveTimeZone.ts": {
     "mtime": 1766706936.9038837,
@@ -270,9 +270,9 @@
     "semantic_hash": "5b0aa2cb7179345249cad26f817443f5"
   },
   "src/screens/SettingsScreen.tsx": {
-    "mtime": 1783934789.126753,
-    "ast_hash": "bddced8924d91b5bfa76c778b7edb70c",
-    "semantic_hash": ""
+    "mtime": 1783525650.2256546,
+    "ast_hash": "60a7ca470f0af412fdbffb6b5b9a43b9",
+    "semantic_hash": "60a7ca470f0af412fdbffb6b5b9a43b9"
   },
   "src/screens/SpeakerDetailScreen.tsx": {
     "mtime": 1783590041.3037455,
@@ -285,14 +285,14 @@
     "semantic_hash": "39d4b465b1ca21a3231b31f90cc7a766"
   },
   "src/store/conferenceData.tsx": {
-    "mtime": 1783939634.8893745,
-    "ast_hash": "ecc64e70799fbb9c3e06e538f14b02bd",
-    "semantic_hash": ""
+    "mtime": 1783476144.4897866,
+    "ast_hash": "3c078cf7b1b2b574f7cf3068169f67e4",
+    "semantic_hash": "3c078cf7b1b2b574f7cf3068169f67e4"
   },
   "src/store/favorites.tsx": {
-    "mtime": 1783934789.127104,
-    "ast_hash": "2d8cb346486b052167ec2e943033c8f4",
-    "semantic_hash": ""
+    "mtime": 1783469775.2382617,
+    "ast_hash": "b2329ee741334bae1620e3d8db688991",
+    "semantic_hash": "b2329ee741334bae1620e3d8db688991"
   },
   "src/store/settings.tsx": {
     "mtime": 1783524256.985032,
@@ -370,18 +370,18 @@
     "semantic_hash": ""
   },
   "docs/architecture.md": {
-    "mtime": 1783940197.1540885,
-    "ast_hash": "d578cad6ec7bb7a282a4865ab7c0d3b1",
+    "mtime": 1783708285.6645505,
+    "ast_hash": "65811c8c039c1b7b93548494ec8b6144",
     "semantic_hash": ""
   },
   "docs/configuration.md": {
-    "mtime": 1783940151.8646848,
-    "ast_hash": "226717385d23f40750acff05f11658d5",
+    "mtime": 1783687079.481326,
+    "ast_hash": "3dd672b8d96fa6dad55daeb8a17cdbf0",
     "semantic_hash": ""
   },
   "docs/data-and-state.md": {
-    "mtime": 1783939659.0162673,
-    "ast_hash": "de77c5751650adfcf59723959fb078d4",
+    "mtime": 1783708293.4083183,
+    "ast_hash": "5d146e116ae81c1d87dda4b5f73425e2",
     "semantic_hash": ""
   },
   "docs/development-workflow.md": {
@@ -475,9 +475,9 @@
     "semantic_hash": ""
   },
   "src/services/conference.ts": {
-    "mtime": 1783939415.5687513,
-    "ast_hash": "3ad112aeed2bd2d41b7a8b47a6ecdded",
-    "semantic_hash": ""
+    "mtime": 1783476120.8322418,
+    "ast_hash": "c598d7d368aa79ce7357d679d207dd79",
+    "semantic_hash": "c598d7d368aa79ce7357d679d207dd79"
   },
   "src/services/conferenceTransform.ts": {
     "mtime": 1783469775.2258198,
@@ -515,9 +515,9 @@
     "semantic_hash": ""
   },
   "public/index.html": {
-    "mtime": 1783939658.9567575,
-    "ast_hash": "8a7da1a7b7663092b0600926f808e951",
-    "semantic_hash": ""
+    "mtime": 1783522900.4504738,
+    "ast_hash": "0fba7501ebb9430ccaacca4f15f9e5fd",
+    "semantic_hash": "0fba7501ebb9430ccaacca4f15f9e5fd"
   },
   "public/apple-touch-icon.png": {
     "mtime": 1783503913.133922,
@@ -565,8 +565,8 @@
     "semantic_hash": ""
   },
   "app.config.js": {
-    "mtime": 1783715122.4609368,
-    "ast_hash": "781f3ef1305bea9ef2a99f1c16f39b3e",
+    "mtime": 1783691653.988346,
+    "ast_hash": "d32869fe7802609b62d53814aacba3ee",
     "semantic_hash": ""
   },
   "src/hooks/useUrlDeepLink.ts": {
@@ -580,8 +580,8 @@
     "semantic_hash": ""
   },
   ".claude/settings.local.json": {
-    "mtime": 1783938116.7971053,
-    "ast_hash": "72463fa7553cdc6849c5f21c55513dc6",
+    "mtime": 1783688698.8515863,
+    "ast_hash": "0e38603e85a2c3ff6e7c4513f9034c4f",
     "semantic_hash": ""
   },
   "deep-link-assets/.well-known/assetlinks.json": {
@@ -595,18 +595,18 @@
     "semantic_hash": ""
   },
   "src/components/venue/ZoomableImage.tsx": {
-    "mtime": 1783714764.687453,
-    "ast_hash": "56174506c301ee7a2472ffabbbfeba3d",
+    "mtime": 1783708163.7733757,
+    "ast_hash": "59640ec9737247277596ac6fc230b753",
     "semantic_hash": ""
   },
   "src/data/venue.ts": {
-    "mtime": 1783714722.7422364,
-    "ast_hash": "4086870ccc156d215972d0a25d2b2637",
+    "mtime": 1783705342.480653,
+    "ast_hash": "fc6b23a5a581c54acc37d6cc56e002ba",
     "semantic_hash": ""
   },
   "src/screens/VenueMapScreen.tsx": {
-    "mtime": 1783708345.736297,
-    "ast_hash": "f2fe1a2f8dae78bd8c81bb62e4e3b5aa",
+    "mtime": 1783706494.5357907,
+    "ast_hash": "706478b5b08a11f3ff9d200827f21868",
     "semantic_hash": ""
   },
   "assets/venue/main-entrance.webp": {

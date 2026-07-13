@@ -21,7 +21,6 @@
   "19": "Settings Row Components",
   "20": "Detail Action Row",
   "21": "Info Card Component",
-  "22": "InfoCard.tsx",
   "23": "Schedule Level Filter",
   "24": "Settings Section Wrapper",
   "25": "Social Links Row",
@@ -52,7 +51,6 @@
   "50": "Shared Logic Placement Doc",
   "51": "Run Commands Doc",
   "52": "CI Type Check Doc",
-  "53": "ScheduleLevelFilter.tsx",
   "54": "Apple Touch Icon",
   "55": "Web Reset Style",
   "56": "Workbox Config",
@@ -80,6 +78,5 @@
   "78": "Docs Rewritten From Full Source Read",
   "79": "Good First Test Candidates",
   "80": "Service Worker Registration Script",
-  "81": "theme.ts",
-  "82": "SettingsSection.tsx"
+  "81": "theme.ts"
 }

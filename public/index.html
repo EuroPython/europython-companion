@@ -36,7 +36,25 @@
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", function () {
           if (!window.__DEV__) {
-            navigator.serviceWorker.register("./service-worker.js");
+            // Only arm the reload for genuine updates, not the first-ever install
+            // (first install also fires controllerchange via clientsClaim).
+            var hadController = !!navigator.serviceWorker.controller;
+            navigator.serviceWorker.register("./service-worker.js").then(function (reg) {
+              reg.update(); // force an immediate update check on load
+              document.addEventListener("visibilitychange", function () {
+                // covers resume-from-background of the installed standalone PWA
+                if (document.visibilityState === "visible") reg.update();
+              });
+            });
+            if (hadController) {
+              var reloading = false;
+              navigator.serviceWorker.addEventListener("controllerchange", function () {
+                if (!reloading) {
+                  reloading = true;
+                  window.location.reload();
+                }
+              });
+            }
           }
         });
       }

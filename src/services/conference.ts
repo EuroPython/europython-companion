@@ -6,7 +6,7 @@ import {
   API_BASE,
   SCHEMA_VERSION,
 } from "@config/conference";
-import { DATA_REFRESH_INTERVAL_MS } from "@config/constants";
+import { DATA_REFRESH_INTERVAL_MS, FETCH_TIMEOUT_MS } from "@config/constants";
 import { RawSessions, RawSpeakers, RawSchedule } from "@app-types/raw";
 import { ConferenceData, Session, Speaker } from "@app-types/conference";
 
@@ -61,11 +61,17 @@ async function purgeOtherYearsCacheKeys(year: number) {
 
 async function fetchJson<T>(baseUrl: string, path: string): Promise<T> {
   const url = `${baseUrl}/${path}`;
-  const res = await fetch(url);
-  if (!res.ok) {
-    throw new Error(`Failed to fetch ${path}: ${res.status} ${res.statusText}`);
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+  try {
+    const res = await fetch(url, { signal: controller.signal });
+    if (!res.ok) {
+      throw new Error(`Failed to fetch ${path}: ${res.status} ${res.statusText}`);
+    }
+    return (await res.json()) as T;
+  } finally {
+    clearTimeout(timeoutId);
   }
-  return (await res.json()) as T;
 }
 
 async function readCachedConferenceData(cacheKey: string): Promise<{
@@ -92,6 +98,15 @@ async function readCachedConferenceData(cacheKey: string): Promise<{
     await AsyncStorage.removeItem(cacheKey);
     return null;
   }
+}
+
+/**
+ * Read cached conference data (if any) without touching the network.
+ * Used to seed the UI instantly on cold start while a background
+ * refresh (loadConferenceDataWithMeta) revalidates.
+ */
+export async function loadCachedConferenceData(year: number) {
+  return readCachedConferenceData(conferenceCacheKey(year));
 }
 
 async function loadFromNetwork(year: number): Promise<ConferenceData> {
