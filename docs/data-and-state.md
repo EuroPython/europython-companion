@@ -36,7 +36,7 @@ Derived values are computed close to where they're used, not centralized:
 
 ## Static content data
 
-`src/data/venue.ts` exports `venueViews`, the ICE Kraków interior wayfinding content shown by `VenueMapScreen` — no store, no fetch, just bundled `require()`'d images (`assets/venue/`) and hand-verified room/floor text. Not fetched or cached like conference data; ships with the app binary and updates only via a new release.
+`src/data/venue.ts` exports the ICE Kraków interior wayfinding content shown by `VenueMapScreen` — no store, no fetch, just bundled `require()`'d images and hand-verified text: `venueFloors` (F0–F3, each an official floor-plan image from `assets/venue/floors/` plus a room list), `venueEntrances` and `quietRoomImages` (photos from `assets/venue/`), and `accessibilityItems` (icon/title/text rows). Not fetched or cached like conference data; ships with the app binary and updates only via a new release.
 
 ## Side effects and isolation
 

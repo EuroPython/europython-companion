@@ -370,8 +370,8 @@
     "semantic_hash": ""
   },
   "docs/architecture.md": {
-    "mtime": 1783945338.1235898,
-    "ast_hash": "0d8d431537dd7f655ffdf0f709b171b6",
+    "mtime": 1783949109.6023774,
+    "ast_hash": "95603a7f27df37540830092eb5c01b32",
     "semantic_hash": ""
   },
   "docs/configuration.md": {
@@ -415,9 +415,9 @@
     "semantic_hash": "97add069815c58fdcc6d5cb160115732"
   },
   "pnpm-workspace.yaml": {
-    "mtime": 1783636071.9057047,
-    "ast_hash": "fd0e862f699bf0e51f550895b448a340",
-    "semantic_hash": "fd0e862f699bf0e51f550895b448a340"
+    "mtime": 1783947746.5874658,
+    "ast_hash": "5deca876a3c86ca797780b122abe69fc",
+    "semantic_hash": ""
   },
   "assets/icon.png": {
     "mtime": 1764491685.6214793,
@@ -595,8 +595,8 @@
     "semantic_hash": ""
   },
   "src/data/venue.ts": {
-    "mtime": 1783944195.6500359,
-    "ast_hash": "8bbec5e6a02fbff8d0aa55ad0127b14c",
+    "mtime": 1783946097.1017742,
+    "ast_hash": "5eda83bf16ac248edd0c5d98453dedca",
     "semantic_hash": ""
   },
   "src/screens/VenueMapScreen.tsx": {
@@ -630,8 +630,8 @@
     "semantic_hash": ""
   },
   "src/components/venue/VenueLightbox.tsx": {
-    "mtime": 1783945189.8373458,
-    "ast_hash": "0d9b02c3aabbdd2a67cd2f92526de7f7",
+    "mtime": 1783947436.0286794,
+    "ast_hash": "5a8b04cfcc64ad00f6b6643d7731512b",
     "semantic_hash": ""
   },
   "drive-download-20260713T112547Z-2-001/F0.pdf": {

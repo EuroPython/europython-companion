@@ -1,0 +1,38 @@
+diff --git a/lib/module/commons/hooks/usePinchCommons.js b/lib/module/commons/hooks/usePinchCommons.js
+index a487c64e3dfbdfefa14b26e1fe498857879a3975..9c8284f69732b0226eb880621e25da893b9451b1 100644
+--- a/lib/module/commons/hooks/usePinchCommons.js
++++ b/lib/module/commons/hooks/usePinchCommons.js
+@@ -129,9 +129,11 @@ export const usePinchCommons = options => {
+       }
+     });
+     gestureEnd.value = withTiming(toValue, undefined, finished => {
+-      gestureEnd.value = 0;
+-      if (finished && userCallbacks.onGestureEnd !== undefined) {
+-        scheduleOnRN(userCallbacks.onGestureEnd);
++      if (finished) {
++        gestureEnd.value = 0;
++        if (userCallbacks.onGestureEnd !== undefined) {
++          scheduleOnRN(userCallbacks.onGestureEnd);
++        }
+       }
+     });
+   };
+diff --git a/src/commons/hooks/usePinchCommons.ts b/src/commons/hooks/usePinchCommons.ts
+index 410a4abc98b1a47e2fe6c65df728c522061f9f26..383bd4718ae7a5ebf1d7c22a1fcbb206084ca520 100644
+--- a/src/commons/hooks/usePinchCommons.ts
++++ b/src/commons/hooks/usePinchCommons.ts
+@@ -179,9 +179,11 @@ export const usePinchCommons = (options: PinchOptions) => {
+     });
+ 
+     gestureEnd.value = withTiming(toValue, undefined, (finished) => {
+-      gestureEnd.value = 0;
+-      if (finished && userCallbacks.onGestureEnd !== undefined) {
+-        scheduleOnRN(userCallbacks.onGestureEnd);
++      if (finished) {
++        gestureEnd.value = 0;
++        if (userCallbacks.onGestureEnd !== undefined) {
++          scheduleOnRN(userCallbacks.onGestureEnd);
++        }
+       }
+     });
+   };

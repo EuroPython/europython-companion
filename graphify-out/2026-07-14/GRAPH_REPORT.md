@@ -1,11 +1,11 @@
-# Graph Report - europython-companion  (2026-07-14)
+# Graph Report - europython-companion  (2026-07-13)
 
 ## Corpus Check
-- 112 files · ~73,728 words
+- 112 files · ~73,632 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 677 nodes · 1415 edges · 84 communities (38 shown, 46 thin omitted)
+- 677 nodes · 1414 edges · 86 communities (39 shown, 47 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.7)
 - Token cost: 0 input · 0 output
 
@@ -94,15 +94,17 @@
 - [[_COMMUNITY_Good First Test Candidates|Good First Test Candidates]]
 - [[_COMMUNITY_Service Worker Registration Script|Service Worker Registration Script]]
 - [[_COMMUNITY_theme.ts|theme.ts]]
+- [[_COMMUNITY_SettingsSection.tsx|SettingsSection.tsx]]
 - [[_COMMUNITY_devDependencies|devDependencies]]
 - [[_COMMUNITY_SocialLinksRow.tsx|SocialLinksRow.tsx]]
+- [[_COMMUNITY_ScheduleTrackFilter.tsx|ScheduleTrackFilter.tsx]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `spacing` - 39 edges
 2. `useConferenceData()` - 25 edges
 3. `useAppNavigation()` - 23 edges
 4. `useSettings()` - 23 edges
-5. `radius` - 21 edges
+5. `radius` - 20 edges
 6. `useFavorites()` - 15 edges
 7. `hapticSelection()` - 14 edges
 8. `useEffectiveTimeZone()` - 13 edges
@@ -116,15 +118,15 @@
   src/utils/calendar.ts → package.json
 - `UrlDeepLinkManager()` --calls--> `useUrlDeepLink()`  [EXTRACTED]
   App.tsx → src/hooks/useUrlDeepLink.ts
-- `AppContent()` --calls--> `useAppNavTheme()`  [EXTRACTED]
-  App.tsx → src/hooks/useAppNavTheme.ts
 - `AppContent()` --calls--> `usePwaInstallPrompt()`  [EXTRACTED]
   App.tsx → src/hooks/usePwaInstallPrompt.ts
+- `AppContent()` --calls--> `useSettings()`  [EXTRACTED]
+  App.tsx → src/store/settings.tsx
 
 ## Import Cycles
 - None detected.
 
-## Communities (84 total, 46 thin omitted)
+## Communities (86 total, 47 thin omitted)
 
 ### Community 0 - "Layout & Home Components"
 Cohesion: 0.18
@@ -139,20 +141,20 @@ Cohesion: 0.33
 Nodes (5): main, name, packageManager, private, version
 
 ### Community 3 - "Calendar & Onboarding UI"
-Cohesion: 0.08
-Nodes (44): Props, ScreenContainer(), styles, FavoriteToggleButton(), IconButtonProps, Props, CONFERENCE_META, CONFERENCE_YEARS (+36 more)
+Cohesion: 0.07
+Nodes (48): Props, ScreenContainer(), styles, FavoriteToggleButton(), IconButtonProps, Props, BaseProps, SettingsSwitchRow() (+40 more)
 
 ### Community 4 - "App Root Composition"
 Cohesion: 0.06
-Nodes (48): AppContent(), ScheduleNotificationManager(), UrlDeepLinkManager(), extractSessionId(), navigateToSession(), useNotificationDeepLink(), navigateToSchedule(), navigateToSession() (+40 more)
+Nodes (52): AppContent(), ScheduleNotificationManager(), UrlDeepLinkManager(), useAppNavTheme(), extractSessionId(), navigateToSession(), useNotificationDeepLink(), navigateToSchedule() (+44 more)
 
 ### Community 5 - "Package Dependencies"
 Cohesion: 0.06
 Nodes (35): dependencies, @bottom-tabs/react-navigation, expo, expo-calendar, expo-dev-client, @expo/dom-webview, expo-font, expo-haptics (+27 more)
 
 ### Community 7 - "spacing"
-Cohesion: 0.08
-Nodes (37): createStyles(), MarkdownBody(), Props, BreakListItem(), Props, styles, nameOrUnknown(), Props (+29 more)
+Cohesion: 0.09
+Nodes (34): BreakListItem(), Props, styles, nameOrUnknown(), Props, SessionListItem(), styles, Props (+26 more)
 
 ### Community 8 - "Dev Dependencies & Tooling"
 Cohesion: 0.17
@@ -175,8 +177,8 @@ Cohesion: 0.11
 Nodes (18): compilerOptions, noUnusedLocals, noUnusedParameters, paths, strict, extends, @/*, @app-types/* (+10 more)
 
 ### Community 13 - "Offline Status Banners"
-Cohesion: 0.14
-Nodes (10): Props, styles, CardProps, Props, SettingsSection(), styles, OfflineBanner(), Props (+2 more)
+Cohesion: 0.22
+Nodes (6): Props, styles, OfflineBanner(), Props, styles, radius
 
 ### Community 14 - "Theme & Navigation Theme"
 Cohesion: 0.06
@@ -199,8 +201,8 @@ Cohesion: 0.18
 Nodes (11): components/, config/, data/, hooks/, navigation/, Project structure, screens/, services/ (+3 more)
 
 ### Community 19 - "Settings Row Components"
-Cohesion: 0.33
-Nodes (4): BaseProps, SettingsSwitchRow(), styles, SwitchProps
+Cohesion: 0.67
+Nodes (3): createStyles(), MarkdownBody(), Props
 
 ### Community 21 - "Info Card Component"
 Cohesion: 0.14
@@ -231,8 +233,8 @@ Cohesion: 0.40
 Nodes (5): Documentation, How this set is organized, Keeping this accurate, Purpose, Where to start
 
 ### Community 29 - "Home Info Data"
-Cohesion: 0.17
-Nodes (8): DayOption, Props, styles, Props, ScheduleFilters(), styles, Props, styles
+Cohesion: 0.25
+Nodes (6): DayOption, Props, styles, Props, ScheduleFilters(), styles
 
 ### Community 30 - "Share Utility"
 Cohesion: 0.50
@@ -255,8 +257,12 @@ Cohesion: 0.50
 Nodes (4): capitalizeWords(), Props, ScheduleLevelFilter(), styles
 
 ### Community 81 - "theme.ts"
-Cohesion: 0.24
-Nodes (9): useAppNavTheme(), ThemeMode, createPaperTheme(), darkPalette, lightPalette, nightPalette, Palette, paperTheme (+1 more)
+Cohesion: 0.38
+Nodes (5): darkPalette, lightPalette, nightPalette, Palette, paperTheme
+
+### Community 82 - "SettingsSection.tsx"
+Cohesion: 0.40
+Nodes (4): CardProps, Props, SettingsSection(), styles
 
 ### Community 83 - "devDependencies"
 Cohesion: 0.33
@@ -273,7 +279,7 @@ Nodes (3): Props, SocialLink, styles
 ## Knowledge Gaps
 - **299 isolated node(s):** `CONFERENCE_YEARS`, `deepLinkHosts`, `name`, `version`, `main` (+294 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **46 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **47 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -291,4 +297,4 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `Conference Data Loading` be split into smaller, more focused modules?**
   _Cohesion score 0.09608843537414966 - nodes in this community are weakly interconnected._
 - **Should `Calendar & Onboarding UI` be split into smaller, more focused modules?**
-  _Cohesion score 0.08484848484848485 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.0726775956284153 - nodes in this community are weakly interconnected._

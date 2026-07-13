@@ -370,8 +370,8 @@
     "semantic_hash": ""
   },
   "docs/architecture.md": {
-    "mtime": 1783940197.1540885,
-    "ast_hash": "d578cad6ec7bb7a282a4865ab7c0d3b1",
+    "mtime": 1783949109.6023774,
+    "ast_hash": "95603a7f27df37540830092eb5c01b32",
     "semantic_hash": ""
   },
   "docs/configuration.md": {
@@ -380,8 +380,8 @@
     "semantic_hash": ""
   },
   "docs/data-and-state.md": {
-    "mtime": 1783939659.0162673,
-    "ast_hash": "de77c5751650adfcf59723959fb078d4",
+    "mtime": 1783943337.0167959,
+    "ast_hash": "2c88054b9e744777ffcea820e4f2f9a4",
     "semantic_hash": ""
   },
   "docs/development-workflow.md": {
@@ -415,9 +415,9 @@
     "semantic_hash": "97add069815c58fdcc6d5cb160115732"
   },
   "pnpm-workspace.yaml": {
-    "mtime": 1783636071.9057047,
-    "ast_hash": "fd0e862f699bf0e51f550895b448a340",
-    "semantic_hash": "fd0e862f699bf0e51f550895b448a340"
+    "mtime": 1783947746.5874658,
+    "ast_hash": "5deca876a3c86ca797780b122abe69fc",
+    "semantic_hash": ""
   },
   "assets/icon.png": {
     "mtime": 1764491685.6214793,
@@ -515,8 +515,8 @@
     "semantic_hash": ""
   },
   "public/index.html": {
-    "mtime": 1783939658.9567575,
-    "ast_hash": "8a7da1a7b7663092b0600926f808e951",
+    "mtime": 1783941653.6364949,
+    "ast_hash": "fa1e130be97bae06f9937c122cf2b02f",
     "semantic_hash": ""
   },
   "public/apple-touch-icon.png": {
@@ -580,8 +580,8 @@
     "semantic_hash": ""
   },
   ".claude/settings.local.json": {
-    "mtime": 1783938116.7971053,
-    "ast_hash": "72463fa7553cdc6849c5f21c55513dc6",
+    "mtime": 1783943098.749793,
+    "ast_hash": "b76e511214942217d69ddb96f091f4ce",
     "semantic_hash": ""
   },
   "deep-link-assets/.well-known/assetlinks.json": {
@@ -594,19 +594,14 @@
     "ast_hash": "a728e8a67879a128dc7e20ad3629b247",
     "semantic_hash": ""
   },
-  "src/components/venue/ZoomableImage.tsx": {
-    "mtime": 1783714764.687453,
-    "ast_hash": "56174506c301ee7a2472ffabbbfeba3d",
-    "semantic_hash": ""
-  },
   "src/data/venue.ts": {
-    "mtime": 1783714722.7422364,
-    "ast_hash": "4086870ccc156d215972d0a25d2b2637",
+    "mtime": 1783980906.888604,
+    "ast_hash": "86e84d262f94e4332131c006e217976f",
     "semantic_hash": ""
   },
   "src/screens/VenueMapScreen.tsx": {
-    "mtime": 1783708345.736297,
-    "ast_hash": "f2fe1a2f8dae78bd8c81bb62e4e3b5aa",
+    "mtime": 1783980849.5781097,
+    "ast_hash": "629bf0c398e64857f8b4f8e377987c5b",
     "semantic_hash": ""
   },
   "assets/venue/main-entrance.webp": {
@@ -627,6 +622,56 @@
   "assets/venue/tutorial-entrance.webp": {
     "mtime": 1783705260.1334121,
     "ast_hash": "d39b02b08324cc840b155e8a7300c730",
+    "semantic_hash": ""
+  },
+  "src/components/venue/VenueImageThumbnail.tsx": {
+    "mtime": 1783943098.9049861,
+    "ast_hash": "9be4b8591418181e9a09afce0a999148",
+    "semantic_hash": ""
+  },
+  "src/components/venue/VenueLightbox.tsx": {
+    "mtime": 1783980906.8760703,
+    "ast_hash": "1272f3cfaaa335d3f0391cb5349b6e8d",
+    "semantic_hash": ""
+  },
+  "drive-download-20260713T112547Z-2-001/F0.pdf": {
+    "mtime": 1768460366.0,
+    "ast_hash": "cb87aea5206774baedecc60b19705d8d",
+    "semantic_hash": ""
+  },
+  "drive-download-20260713T112547Z-2-001/F1.pdf": {
+    "mtime": 1768460382.0,
+    "ast_hash": "124fea55eb59d17e8cdcaf27a3ffd724",
+    "semantic_hash": ""
+  },
+  "drive-download-20260713T112547Z-2-001/F2.pdf": {
+    "mtime": 1768460396.0,
+    "ast_hash": "0acb84f90af916a53ce6d49f997ef04c",
+    "semantic_hash": ""
+  },
+  "drive-download-20260713T112547Z-2-001/F3.pdf": {
+    "mtime": 1768460410.0,
+    "ast_hash": "eac892e8f362dae03b871fb2b0d94ba0",
+    "semantic_hash": ""
+  },
+  "assets/venue/floors/f0.webp": {
+    "mtime": 1783942943.4127002,
+    "ast_hash": "e1365682ff9913331b1aa910add9bc51",
+    "semantic_hash": ""
+  },
+  "assets/venue/floors/f1.webp": {
+    "mtime": 1783942943.5474765,
+    "ast_hash": "f2080aa43ccd2b5b150665fe85b8dbcb",
+    "semantic_hash": ""
+  },
+  "assets/venue/floors/f2.webp": {
+    "mtime": 1783942943.679751,
+    "ast_hash": "d9a85733999c091f3ee66f4a8d92d0e8",
+    "semantic_hash": ""
+  },
+  "assets/venue/floors/f3.webp": {
+    "mtime": 1783942943.8143294,
+    "ast_hash": "5227aa45ac6bc244719b4be26b9c040b",
     "semantic_hash": ""
   }
 }

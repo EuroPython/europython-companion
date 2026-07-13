@@ -12,3 +12,5 @@ minimumReleaseAgeExclude:
   - expo-modules-jsi@57.0.1
   - expo@57.0.4
 nodeLinker: hoisted
+patchedDependencies:
+  react-native-zoom-toolkit: patches/react-native-zoom-toolkit.patch
